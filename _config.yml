@@ -25,7 +25,7 @@ title:                 C.eight26 Blog
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  공부한 것💻, 읽은 것📚, 느낀 것💚을
+  공부한 것, 읽은 것, 느낀 것을
   기록하는 공간입니다.
 
 # A shorter description for the sidebar.
