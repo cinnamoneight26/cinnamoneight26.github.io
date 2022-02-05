@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hydejack, Stripe-ified
+title: JavaScript Test 1
 image: /assets/img/blog/jj-ying.jpg
 accent_image:
     background: url('/assets/img/blog/jj-ying.jpg') center/cover
