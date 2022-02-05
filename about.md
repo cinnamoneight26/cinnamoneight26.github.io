@@ -1,9 +1,8 @@
 ---
 layout: about
-image: /assets/img/blog/hydejack-9.jpg
+image: /assets/img/me/kimminhee.jpeg
 description: >
-  A boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  우연히 접한 HTML과 CSS에 매료되어 책 보고 밤새 키보드를 두드리다 여기까지 오게 된 사람
 hide_description: true
 redirect_from:
   - /download/
