@@ -2,78 +2,77 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              MINHEE KIM
-  email:             cinnamon.eight26@gmail.com
+    name: MINHEE KIM
+    email: cinnamon.eight26@gmail.com
 
-  # Used at the bottom of each page and at the top of the `about` layout
-  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:             
-          백지의 문서 위에 View를 구현하는 것이 재미있는 사람.
-          개발이 즐거워서 늦은 나이에 겁 없이 뛰어든 프론트 엔드 개발자입니다.
+    # Used at the bottom of each page and at the top of the `about` layout
+    # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+    about: 백지의 문서 위에 View를 구현하는 것이 재미있는 사람.<br/>
+        개발이 즐거워서 늦은 나이에 겁 없이 뛰어든 프론트엔드 개발자입니다.
 
-  # This photo will be used in the about section
-  picture:
-    path:            /assets/img/me/me_1.jpeg
-    # srcset is optional, but can be used to provide higher res versions for retina displays
-    srcset:
-      1x:            /assets/img/me/me_1.jpeg
-      2x:            /assets/img/me/me_1.jpeg
+    # This photo will be used in the about section
+    picture:
+        path: /assets/img/me/me_1.jpeg
+        # srcset is optional, but can be used to provide higher res versions for retina displays
+        srcset:
+            1x: /assets/img/me/me_1.jpeg
+            2x: /assets/img/me/me_1.jpeg
 
-  # Social media icons in sidebar
-  # Comment/uncommet to show/hide
-  # Rearrange to change the order in which they appear
-  social:
-    twitter:         ceight26
-    github:          cinnamoneight26
-    email:           cinnamon.eight26@gmail.com
-    rss:             https://cinnamoneight26.github.io
-    # facebook:        <username>
-    # google:          <number>
-    # vk:              <username>
-    # youtube:         <string_string_string>
-    # vimeo:           <username>
-    # vine:            <username>
-    # spotify:         <user>/<number>
-    # soundcloud:      <username>
-    # lastfm:          <username>
-    # instagram:       <username>
-    # flickr:          <string@string>
-    # 500px:           <username>
-    # dribbble:        <username>
-    # behance:         <username>
-    # deviantart:      <username>
-    # ello:            <username>
-    # twitch:          <username>
-    # steam:           <number>
-    # reddit:          <username>
-    # tumblr:          <username>
-    # pinterest:       <username>
-    # foursquare:      <number>
-    # yelp:            <string>
-    # stackoverflow:   <number/username>
-    # npm:             <username>
-    # hackernews:      <username>
-    # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
-    # xing:            <firstname_lastname_counter>
-    # blogger:         <number>
-    # delicious:       <username>
-    # stumbleupon:     <username>
-    # paypal:          <username>
-    # download:        <url>
-    # keybase          <username>
+    # Social media icons in sidebar
+    # Comment/uncommet to show/hide
+    # Rearrange to change the order in which they appear
+    social:
+        twitter: ceight26
+        github: cinnamoneight26
+        email: cinnamon.eight26@gmail.com
+        rss: https://cinnamoneight26.github.io
+        # facebook:        <username>
+        # google:          <number>
+        # vk:              <username>
+        # youtube:         <string_string_string>
+        # vimeo:           <username>
+        # vine:            <username>
+        # spotify:         <user>/<number>
+        # soundcloud:      <username>
+        # lastfm:          <username>
+        # instagram:       <username>
+        # flickr:          <string@string>
+        # 500px:           <username>
+        # dribbble:        <username>
+        # behance:         <username>
+        # deviantart:      <username>
+        # ello:            <username>
+        # twitch:          <username>
+        # steam:           <number>
+        # reddit:          <username>
+        # tumblr:          <username>
+        # pinterest:       <username>
+        # foursquare:      <number>
+        # yelp:            <string>
+        # stackoverflow:   <number/username>
+        # npm:             <username>
+        # hackernews:      <username>
+        # trello:          <firstnamelastname>
+        # linkedin:        <firstname-lastname-string>
+        # xing:            <firstname_lastname_counter>
+        # blogger:         <number>
+        # delicious:       <username>
+        # stumbleupon:     <username>
+        # paypal:          <username>
+        # download:        <url>
+        # keybase          <username>
 
 # Another author (optional)
 author2:
-  name:              <firtname> <lastname>
-  email:             <mail@domain.tld>
-  about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    name: <firtname> <lastname>
+    email: <mail@domain.tld>
+    about: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-    Open `_data/authors.yml` to edit this text.
+        Open `_data/authors.yml` to edit this text.
 
-  picture:           https://placehold.it/128x128
-  twitter:           <username>
-  github:            <username>
+    picture: https://placehold.it/128x128
+    twitter: <username>
+    github: <username>
