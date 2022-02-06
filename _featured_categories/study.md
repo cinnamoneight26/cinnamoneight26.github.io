@@ -9,11 +9,3 @@ description: >
 ---
 
 # Study
-
-## 카테고리
-
--   [Voca]{:.heading.flip-title}
--   [JavaScript]{:.heading.flip-title}
-
-[voca]: /voca/
-[javascript]: /javascript/

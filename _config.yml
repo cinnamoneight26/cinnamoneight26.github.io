@@ -49,11 +49,6 @@ author:
 menu:
     - title: Study
       url: /study/
-      submenu:
-          - title: Voca
-            url: /voca/
-          - title: JavaScript
-            url: /javascript/
     - title: Books
       url: /books/
     - title: Diary

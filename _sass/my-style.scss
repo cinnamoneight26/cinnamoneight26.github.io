@@ -121,3 +121,67 @@ pre > code {
         padding-bottom: 2px;
     }
 }
+.page-control {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-control > div {
+    max-width: 48%;
+}
+.page-control {
+    height: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-control > div {
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.page-control > div > span {
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: rgba(79, 177, 186, 0.5);
+}
+
+.button {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #ddd !important;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 6px 50px;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 350px;
+    text-align: center;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color: #f6f6f6;
+    border: 1px solid rgba(79, 177, 186, 0.5) !important;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+}
