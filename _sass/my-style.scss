@@ -265,3 +265,13 @@ pre > code {
 .list-post li.h6 {
     margin-top: 0 !important;
 }
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width: 767px) {
+    .top-menu {
+        display: none;
+    }
+    .page-control > div {
+        max-width: 48%;
+    }
+}
