@@ -53,8 +53,8 @@ menu:
       url: /books/
     - title: Diary
       url: /diary/
-    - title: ETC
-      url: /etc/
+    - title: Boxed
+      url: /boxed/
     - title: About
       url: /about/
 # Add links to the footer.
