@@ -1,7 +1,7 @@
 ---
 layout: list
-title: ETC
-slug: ETC
+title: Boxed
+slug: boxed
 accent_image:
     background: url('/assets/img/blog/jj-ying.jpg') center/cover
     overlay: false
