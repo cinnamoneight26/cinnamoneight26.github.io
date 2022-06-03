@@ -2,6 +2,7 @@
 layout: list
 title: Boxed
 slug: boxed
+invert_sidebar: true
 accent_image:
     background: url('/assets/img/blog/jj-ying.jpg') center/cover
     overlay: false
