@@ -108,3 +108,41 @@ case 4에서 사용한 test01_child.html 코딩<br><br>
 <br>
 위 상태에서 메세지에 글을 입력하고 닫기를 누르면 <br>
 원래 새 창을 띄우기 위해 버튼을 만들었던 페이지에 메세지가 출력됩니다.<br>
+
+---
+
+### 팝업 이동, 생성된 팝업 변경
+
+예시로 세 개의 버튼을 생성합니다.<br><br>
+
+```html
+<button onclick="createPop()">생성</button>
+<button onclick="movePop()">이동</button>
+<button onclick="sizePop()">변경</button>
+```
+
+<br>
+생성 버튼을 눌렀을 때는 createPop() 함수를 통해 popup창 생성하게 하고<br>
+이동 버튼을 눌렀을 때는 movePop() 함수를 통해 이동 버튼 클릭 할 때 마다 새 창이 이동하도록 합니다.<br><br>
+
+moveTo는 절대 지정좌표, moveBy는 상대좌표.<br>
+변경 버튼을 눌렀을 때는 sizePop() 함수를 통해 새 창의 사이즈를 변경합니다.<br>
+
+```javascript
+var pop;
+function createPop() {
+    pop = window.open("", "", "width=400, height=300");
+    //     sizePop();
+    //    pop.onunload = function () {
+    //        createPop()
+    //    };
+}
+function movePop() {
+    //pop.moveTo(200, 200);   // 절대(지정) 좌표
+    pop.moveBy(30, 20); // 상대 좌표. 현재 위치에서 클릭 시 계속 이동
+}
+function sizePop() {
+    pop.resizeTo(screen.width + 20, screen.height + 20);
+    //pop.resizeBy(20, 10);
+}
+```
