@@ -70,3 +70,31 @@ console.log(member.id, member.getId()); // kang kang
 결과 :<br>
 hong hong<br>
 kang kang<br>
+
+---
+
+여러 개의 동일한 형태의 데이터를 관리할 때 함수를 활용합니다.<br>
+
+```javascript
+function createMember(name, age, gender, addr) {
+    //프로퍼티는 변수명을 참조하지 않음. 값을 참조한다.
+    return { name: name, age: age, gender: gender, addr: addr };
+}
+console.log("--------------------------------------------------------");
+
+var m1 = createMember("조조", 33, "남", "성남");
+var m2 = createMember("유비", 44, "여", "현덕");
+var m3 = createMember("장비", 22, "남", "장수");
+var m4 = createMember("관우", 11, "남", "관소");
+
+console.log(m1);
+console.log(m2);
+console.log(m3);
+console.log(m4);
+```
+
+결과 :<br>
+{ name: '조조', age: 33, gender: '남', addr: '성남' }<br>
+{ name: '유비', age: 44, gender: '여', addr: '현덕' }<br>
+{ name: '장비', age: 22, gender: '남', addr: '장수' }<br>
+{ name: '관우', age: 11, gender: '남', addr: '관소' }<br>
