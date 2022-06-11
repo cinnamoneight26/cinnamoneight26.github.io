@@ -3,7 +3,7 @@ layout: post
 title: JavaScript - navigator.userAgent / 접속환경 알아보기
 tags: JavaScript navigator.userAgent
 description: >
-    JavaScript - navigator.userAgent / 접속환경 알아보기/ 접속환경 알아보기
+    JavaScript - navigator.userAgent / 접속환경 알아보기
 accent_image:
     background: url('/assets/img/blog/javascript_bg.jpg') center/cover
     overlay: false
