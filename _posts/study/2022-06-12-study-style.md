@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript - css 변경. style / className
-tags: JavaScript classNmae css style
+tags: JavaScript className css style
 description: >
     JavaScript - css 변경. style / className
 accent_image:
