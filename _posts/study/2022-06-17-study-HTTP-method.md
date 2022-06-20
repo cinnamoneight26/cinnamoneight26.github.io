@@ -85,4 +85,32 @@ HTTP 기타 메서드는 아래와 같습니다.
 
 ### HTTP 메서드 - PUT, PATCH, DELETE
 
+-   PUT
+
+        PUT /members/100 HTTP/1.1
+          Content-Type: application/json
+
+          {
+              "username":"hello",
+              "age":20
+          }
+
+    -   리소스를 대체
+        -   리소스가 있으면 대체하고 없으면 생성합니다. 쉽게 이야기해서 덮어버립니다.
+        -   리소스를 완전히 대체하므로 하나의 필드만 들어오면 하나의 데이터만 들어가게 됩니다. 예를들어 "age"를 20에서 50으로 변경했을 떄 username 없이 진행하면 해당 필드에는 username 없이 age만 들어갑니다. 그렇기 때문에 PUT은 리소스를 수정하는데에는 부적합합니다.
+    -   클라이언트가 리소스를 식별합니다.(중요!!)
+        -   클라이언트가 리소스 위치를 알고 URI를 지정합니다. 클라이언트가 구체적인 리소스의 위치를 알고 있습니다.
+        -   POST와 차이점입니다.
+
+-   PATCH
+
+          PATCH /members/100 HTTP/1.1
+            Content-Type: application/json
+
+            {
+                "age":50
+            }
+
+    -   리소스 부분 변경
+
 ### HTTP 메서드의 속성
