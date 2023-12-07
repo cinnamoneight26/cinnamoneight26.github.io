@@ -1,7 +1,7 @@
 ---
 layout: list
 title: 일상생활
-slug: diary
+slug: 일상생활
 accent_image:
   background: url('/assets/img/blog/diary_bg.jpg') center/cover
   overlay: false

@@ -1,7 +1,7 @@
 ---
 layout: list
 title: 취미생활
-slug: boxed
+slug: 취미생활
 invert_sidebar: true
 accent_image:
   background: url('/assets/img/blog/jj-ying.jpg') center/cover
