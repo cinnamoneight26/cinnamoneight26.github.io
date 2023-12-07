@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 함수 내에서의 this
 tags: JavaScript object 객체 this
 description: >
-    JavaScript - 함수 내에서의 this
+  JavaScript - 함수 내에서의 this
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 18일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -28,7 +28,7 @@ var m1 = { name: "홍길동" };
 var m2 = { name: "고길동" };
 
 function msg() {
-    console.log(this.name); // 이 함수가 호출한 객체에 따라 this는 다양해질 수 있다. m1, m2....
+  console.log(this.name); // 이 함수가 호출한 객체에 따라 this는 다양해질 수 있다. m1, m2....
 }
 
 m1.msg = msg; // m1에 msg 프로퍼티에 msg() 를 실행한 값을 참조하도록 한다.
@@ -50,14 +50,14 @@ m2.msg();
 
 ```javascript
 var member = {
-    id: "hong",
-    name: "홍길동",
-    setId: function (id) {
-        this.id = id;
-    },
-    getId: function () {
-        return this.id;
-    },
+  id: "hong",
+  name: "홍길동",
+  setId: function (id) {
+    this.id = id;
+  },
+  getId: function () {
+    return this.id;
+  },
 };
 
 console.log(member.id, member.getId()); // hong hong
@@ -77,8 +77,8 @@ kang kang<br>
 
 ```javascript
 function createMember(name, age, gender, addr) {
-    //프로퍼티는 변수명을 참조하지 않음. 값을 참조한다.
-    return { name: name, age: age, gender: gender, addr: addr };
+  //프로퍼티는 변수명을 참조하지 않음. 값을 참조한다.
+  return { name: name, age: age, gender: gender, addr: addr };
 }
 console.log("--------------------------------------------------------");
 

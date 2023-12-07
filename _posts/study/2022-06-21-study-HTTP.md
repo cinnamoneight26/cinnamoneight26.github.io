@@ -11,7 +11,7 @@ sitemap: false
 published: false
 # invert_sidebar: true
 categories:
-  - study
+  - 탐구생활
 ---
 
 ---

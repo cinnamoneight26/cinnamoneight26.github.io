@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 객체를 변수에 저장하기
 tags: JavaScript object 객체
 description: >
-    JavaScript - 객체를 변수에 저장하기
+  JavaScript - 객체를 변수에 저장하기
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 18일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -35,7 +35,7 @@ console.log(member2);
 // 객체일 때 내용을 확인
 // for ~ in : 객체의 키를 반환
 for (let key in member1) {
-    console.log("key : ", key, ", value : ", member1[key]);
+  console.log("key : ", key, ", value : ", member1[key]);
 }
 ```
 
@@ -51,12 +51,12 @@ key : email , value : hong@a.com<br>
 
 ```javascript
 var obj = {
-    name: "홍",
-    age: 35,
-    addr: ["서울시", "강호구", 110],
-    work: function () {
-        return "백수";
-    },
+  name: "홍",
+  age: 35,
+  addr: ["서울시", "강호구", 110],
+  work: function () {
+    return "백수";
+  },
 };
 console.log(obj.work());
 ```

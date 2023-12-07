@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 팝업 띄우기
 tags: JavaScript popup 팝업
 description: >
-    JavaScript - 팝업 띄우기
+  JavaScript - 팝업 띄우기
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 22일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -43,38 +43,34 @@ option - 창의 넓이, 위치, 스크롤 등 옵션 설정<br><br>
 
 ```javascript
 function doResult(msg) {
-    document.querySelector("#result").innerHTML = msg;
+  document.querySelector("#result").innerHTML = msg;
 }
 
 function openPop(type) {
-    switch (type) {
-        case 1:
-            window.open(
-                "http://www.naver.com",
-                "pop1",
-                "width=400, height=300"
-            );
-            break;
-        case 2:
-            window.open("http://www.naver.com", "", "width=400, height=300");
-            break;
-        case 3:
-            console.log(screen.width, screen.height); // 해상도 보기 : screen
-            // 화면 가운데 자리 구하기
-            var left = (screen.width - 400) / 2;
-            var top = (screen.height - 300) / 2;
-            window.open(
-                "http://www.naver.com",
-                "",
-                `width=400, height=300, left=${left}, top=${top}`
-            );
-            break;
-            break;
+  switch (type) {
+    case 1:
+      window.open("http://www.naver.com", "pop1", "width=400, height=300");
+      break;
+    case 2:
+      window.open("http://www.naver.com", "", "width=400, height=300");
+      break;
+    case 3:
+      console.log(screen.width, screen.height); // 해상도 보기 : screen
+      // 화면 가운데 자리 구하기
+      var left = (screen.width - 400) / 2;
+      var top = (screen.height - 300) / 2;
+      window.open(
+        "http://www.naver.com",
+        "",
+        `width=400, height=300, left=${left}, top=${top}`
+      );
+      break;
+      break;
 
-        case 4:
-            window.open("test01_child.html", "", "width=400, height=300");
-            break;
-    }
+    case 4:
+      window.open("test01_child.html", "", "width=400, height=300");
+      break;
+  }
 }
 ```
 
@@ -96,12 +92,12 @@ case 4에서 사용한 test01_child.html 코딩<br><br>
 <button onclick="winClose()">닫기</button>
 
 <script>
-    function winClose() {
-        // 자신을 띄운창에 접근 : opener
-        opener.doResult(document.querySelector("#msg").value); // 나를 띄운 부모창의 doResult에 접근
+  function winClose() {
+    // 자신을 띄운창에 접근 : opener
+    opener.doResult(document.querySelector("#msg").value); // 나를 띄운 부모창의 doResult에 접근
 
-        self.close();
-    }
+    self.close();
+  }
 </script>
 ```
 
@@ -131,18 +127,18 @@ moveTo는 절대 지정좌표, moveBy는 상대좌표.<br>
 ```javascript
 var pop;
 function createPop() {
-    pop = window.open("", "", "width=400, height=300");
-    //     sizePop();
-    //    pop.onunload = function () {
-    //        createPop()
-    //    };
+  pop = window.open("", "", "width=400, height=300");
+  //     sizePop();
+  //    pop.onunload = function () {
+  //        createPop()
+  //    };
 }
 function movePop() {
-    //pop.moveTo(200, 200);   // 절대(지정) 좌표
-    pop.moveBy(30, 20); // 상대 좌표. 현재 위치에서 클릭 시 계속 이동
+  //pop.moveTo(200, 200);   // 절대(지정) 좌표
+  pop.moveBy(30, 20); // 상대 좌표. 현재 위치에서 클릭 시 계속 이동
 }
 function sizePop() {
-    pop.resizeTo(screen.width + 20, screen.height + 20);
-    //pop.resizeBy(20, 10);
+  pop.resizeTo(screen.width + 20, screen.height + 20);
+  //pop.resizeBy(20, 10);
 }
 ```

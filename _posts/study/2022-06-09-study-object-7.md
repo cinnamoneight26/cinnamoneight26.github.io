@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 객체의 프로퍼티명 단축
 tags: JavaScript object 객체
 description: >
-    JavaScript - 객체의 프로퍼티명 단축
+  JavaScript - 객체의 프로퍼티명 단축
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 18일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -22,38 +22,38 @@ ES6에 추가된 기능이며 객체의 프로퍼티를 단축해서 사용할 �
 
 ```javascript
 var id = "hong",
-    name = "홍길동",
-    age = 33;
+  name = "홍길동",
+  age = 33;
 
 var member1 = {
-    id: id, // 프로퍼티 : 변수
-    name: name,
-    age: age,
-    info: function () {
-        console.log();
-    },
+  id: id, // 프로퍼티 : 변수
+  name: name,
+  age: age,
+  info: function () {
+    console.log();
+  },
 };
 console.log(member1);
 
 // 변수에 입력된 값을 객체에 설정할 때 변수의 이름을 프로퍼티명으로 설정하는 상황
 var member2 = {
-    id,
-    name,
-    age,
-    info: function () {
-        console.log("info");
-    },
+  id,
+  name,
+  age,
+  info: function () {
+    console.log("info");
+  },
 };
 console.log(member2);
 
 var member3 = {
-    id,
-    name,
-    age,
-    //info : function() { console.log("info")}
-    info() {
-        console.log("info");
-    },
+  id,
+  name,
+  age,
+  //info : function() { console.log("info")}
+  info() {
+    console.log("info");
+  },
 };
 console.log(member3);
 ```

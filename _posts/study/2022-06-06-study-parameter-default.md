@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - parameter default 설정
 tags: JavaScript parameter
 description: >
-    JavaScript - parameter default 설정
+  JavaScript - parameter default 설정
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 18일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -26,11 +26,11 @@ parameter에 값이 없는 경우 초기화 시킵니다.<br>
 
 ```javascript
 function fn(num1, num2) {
-    //if(!num1) num1 = 0;
-    //if(!num2) num2 = 0;
-    num1 = num1 || 0;
-    num2 = num2 || 0;
-    console.log(num1, num2);
+  //if(!num1) num1 = 0;
+  //if(!num2) num2 = 0;
+  num1 = num1 || 0;
+  num2 = num2 || 0;
+  console.log(num1, num2);
 }
 fn();
 fn(100);
@@ -48,7 +48,7 @@ fn(100, 100);
 
 ```javascript
 function fn2(num1 = 0, num2 = 0) {
-    console.log(num1, num2);
+  console.log(num1, num2);
 }
 fn2();
 fn2(100);

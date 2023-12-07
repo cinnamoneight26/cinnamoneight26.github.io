@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 엘리먼트에 속성을 추가하는 두 가지 방법
 tags: JavaScript attribute
 description: >
-    JavaScript - 엘리먼트에 속성을 추가하는 두 가지 방법
+  JavaScript - 엘리먼트에 속성을 추가하는 두 가지 방법
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 19일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -31,24 +31,24 @@ categories:
 
 ```html
 <body>
-    <button onclick="doAdd();">추가</button>
-    <div id="list"></div>
+  <button onclick="doAdd();">추가</button>
+  <div id="list"></div>
 
-    <script>
-        function doAdd() {
-            var list = document.querySelector("#list");
-            // <img msg="test" width="200" height="150" src="test1.jpg" />
-            var img = document.createElement("img");
-            img.src = "test1.jpg";
-            img.width = 200;
-            img.height = 150;
+  <script>
+    function doAdd() {
+      var list = document.querySelector("#list");
+      // <img msg="test" width="200" height="150" src="test1.jpg" />
+      var img = document.createElement("img");
+      img.src = "test1.jpg";
+      img.width = 200;
+      img.height = 150;
 
-            // 사용자가 직접 속성을 추가 : 브라우저에 추가되지 않는다.
-            img.msg = "text";
+      // 사용자가 직접 속성을 추가 : 브라우저에 추가되지 않는다.
+      img.msg = "text";
 
-            list.appendChild(img);
-        }
-    </script>
+      list.appendChild(img);
+    }
+  </script>
 </body>
 ```
 
@@ -62,25 +62,25 @@ categories:
 
 ```html
 <body>
-    <button onclick="doAdd();">추가</button>
-    <div id="list"></div>
+  <button onclick="doAdd();">추가</button>
+  <div id="list"></div>
 
-    <script>
-        function doAdd() {
-            var list = document.querySelector("#list");
-            // <img msg="test" width="200" height="150" src="test1.jpg" />
-            var img = document.createElement("img");
+  <script>
+    function doAdd() {
+      var list = document.querySelector("#list");
+      // <img msg="test" width="200" height="150" src="test1.jpg" />
+      var img = document.createElement("img");
 
-            img.setAttribute("src", "test1.jpg");
-            img.setAttribute("width", 200);
-            img.setAttribute("height", 150);
+      img.setAttribute("src", "test1.jpg");
+      img.setAttribute("width", 200);
+      img.setAttribute("height", 150);
 
-            // 사용자 정의 속성
-            img.setAttribute("msg", "text");
+      // 사용자 정의 속성
+      img.setAttribute("msg", "text");
 
-            list.appendChild(img);
-        }
-    </script>
+      list.appendChild(img);
+    }
+  </script>
 </body>
 ```
 
@@ -96,21 +96,21 @@ categories:
 
 ```html
 <body>
-    <!-- data- 으로 시작하는 것은 사용자 정의 태그. 안 쓰면 표준에 어긋남 -->
-    <button onclick="doAction();">확인</button>
-    <div id="result" data-msg="test">속성 확인용</div>
+  <!-- data- 으로 시작하는 것은 사용자 정의 태그. 안 쓰면 표준에 어긋남 -->
+  <button onclick="doAction();">확인</button>
+  <div id="result" data-msg="test">속성 확인용</div>
 
-    <script>
-        function doAction() {
-            var divObj = document.querySelector("div");
-            console.log("id", divObj.id); //  가져오는 방식1
-            console.log("id", divObj.getAttribute("id")); //  가져오는 방식2
-            console.log("id", divObj["id"]); //  가져오는 방식 3
+  <script>
+    function doAction() {
+      var divObj = document.querySelector("div");
+      console.log("id", divObj.id); //  가져오는 방식1
+      console.log("id", divObj.getAttribute("id")); //  가져오는 방식2
+      console.log("id", divObj["id"]); //  가져오는 방식 3
 
-            //console.log("id",divObj.data-msg);
-            // console.log("id",divObj.getAttribute("data-msg"));
-            console.log("id", divObj["data-msg"]);
-        }
-    </script>
+      //console.log("id",divObj.data-msg);
+      // console.log("id",divObj.getAttribute("data-msg"));
+      console.log("id", divObj["data-msg"]);
+    }
+  </script>
 </body>
 ```

@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 엘리먼트 동적으로 삭제(remove())
 tags: JavaScript element remove
 description: >
-    JavaScript - 엘리먼트 동적으로 삭제(remove())
+  JavaScript - 엘리먼트 동적으로 삭제(remove())
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 19일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -24,22 +24,22 @@ categories:
 
 ```html
 <body>
-    <button onclick="doAdd();">추가</button>
-    <button onclick="doDel();">삭제</button>
-    <div id="list"></div>
+  <button onclick="doAdd();">추가</button>
+  <button onclick="doDel();">삭제</button>
+  <div id="list"></div>
 
-    <script>
-        function doAdd() {
-            var count = 1;
-            var list = document.querySelector("#list");
-            list.innerHTML += "<h1>테스트</h1>";
-        }
-        function doDel() {
-            var h1 = document.querySelector("h1");
-            //h1.remove();
-            //h1.parentNode.remove();          // 오류
-            h1.parentElement.innerHTML = ""; // 한꺼번에 전체 다 삭제하기
-        }
-    </script>
+  <script>
+    function doAdd() {
+      var count = 1;
+      var list = document.querySelector("#list");
+      list.innerHTML += "<h1>테스트</h1>";
+    }
+    function doDel() {
+      var h1 = document.querySelector("h1");
+      //h1.remove();
+      //h1.parentNode.remove();          // 오류
+      h1.parentElement.innerHTML = ""; // 한꺼번에 전체 다 삭제하기
+    }
+  </script>
 </body>
 ```

@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - css 변경. style / className
 tags: JavaScript className css style
 description: >
-    JavaScript - css 변경. style / className
+  JavaScript - css 변경. style / className
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 22일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -34,17 +34,17 @@ categories:
 
 ```javascript
 function changeCss() {
-    var h2Ele = document.querySelector("h2"); // 적용대상 h2
+  var h2Ele = document.querySelector("h2"); // 적용대상 h2
 
-    h2Ele.style.border = "5px solid tomato"; // 테두리
-    h2Ele.style.height = "100px"; // 높이
-    h2Ele.style.color = "blue"; // 글씨색
-    h2Ele.style.padding = "30px"; // 안쪽 여백
-    h2Ele.style.margin = "30px"; // 바깥 여백
-    h2Ele.style.borderRadius = "30px"; // 테두리 둥굴게
-    h2Ele.style.backgroundColor = "skyblue"; // 배경색
-    h2Ele.style["line-height"] = "100px"; // inline 세로 가운데 정렬
-    h2Ele.style.textAlign = "center"; // 가로 가운데 정렬
+  h2Ele.style.border = "5px solid tomato"; // 테두리
+  h2Ele.style.height = "100px"; // 높이
+  h2Ele.style.color = "blue"; // 글씨색
+  h2Ele.style.padding = "30px"; // 안쪽 여백
+  h2Ele.style.margin = "30px"; // 바깥 여백
+  h2Ele.style.borderRadius = "30px"; // 테두리 둥굴게
+  h2Ele.style.backgroundColor = "skyblue"; // 배경색
+  h2Ele.style["line-height"] = "100px"; // inline 세로 가운데 정렬
+  h2Ele.style.textAlign = "center"; // 가로 가운데 정렬
 }
 ```
 
@@ -61,15 +61,15 @@ function changeCss() {
 
 ```css
 .a {
-    border: 5px solid tomato;
-    color: blue;
-    height: 100px;
-    padding: 30px;
-    margin: 30px;
-    border-radius: 30px;
-    background-color: skyblue;
-    line-height: 100px;
-    text-align: center;
+  border: 5px solid tomato;
+  color: blue;
+  height: 100px;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 30px;
+  background-color: skyblue;
+  line-height: 100px;
+  text-align: center;
 }
 ```
 
@@ -77,9 +77,9 @@ function changeCss() {
 
 ```javascript
 function changeCss() {
-    var h2Ele = document.querySelector("h2"); // 적용 대상 h2
+  var h2Ele = document.querySelector("h2"); // 적용 대상 h2
 
-    // 클릭 시 해당 엘리먼트에 a라는 이름의 클래스를 생성한다.
-    h2Ele.className = "a";
+  // 클릭 시 해당 엘리먼트에 a라는 이름의 클래스를 생성한다.
+  h2Ele.className = "a";
 }
 ```

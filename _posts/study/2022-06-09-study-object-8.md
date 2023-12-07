@@ -4,15 +4,15 @@ title: JavaScript - 객체와 디스트럭처링(Destructuring)
 
 tags: JavaScript object destructuring
 description: >
-    JavaScript - 객체와 디스트럭처링(Destructuring)
+  JavaScript - 객체와 디스트럭처링(Destructuring)
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 18일 당시 공부한 내용을 그대로 옮겨온 글입니다.

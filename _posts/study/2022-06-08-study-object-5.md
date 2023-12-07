@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 객체와 생성자
 tags: JavaScript object 객체 생성자
 description: >
-    JavaScript - 객체와 생성자
+  JavaScript - 객체와 생성자
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 18일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -26,7 +26,7 @@ new와 함께 사용하는 함수(생성자)는 this의 해석이 달라집니�
 
 ```javascript
 function Member() {
-    console.log(this); // undefined. 객체가 없음
+  console.log(this); // undefined. 객체가 없음
 }
 
 var m1 = Member();

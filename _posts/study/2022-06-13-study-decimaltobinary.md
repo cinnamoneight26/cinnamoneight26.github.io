@@ -3,15 +3,15 @@ layout: post
 title: 이진수를 십진수로, 십진수를 이진수로 계산하기
 tags: 이진수 십진수 이진수를십진수로 십진수를이진수로 계산 2진수를10진수로 10진수를2진수로
 description: >
-    이진수를 십진수로, 십진수를 이진수로 계산하기
+  이진수를 십진수로, 십진수를 이진수로 계산하기
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 ---

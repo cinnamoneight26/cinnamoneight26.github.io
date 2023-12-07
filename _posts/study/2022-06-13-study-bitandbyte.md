@@ -3,15 +3,15 @@ layout: post
 title: 비트와 바이트
 tags: bit byte KB MB GB 비트 바이트 킬로바이트 메가바이트 기가바이트 테라바이트
 description: >
-    비트와 바이트
+  비트와 바이트
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 ---

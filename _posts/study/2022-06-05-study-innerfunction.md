@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 내부 함수
 tags: JavaScript 내부함수
 description: >
-    JavaScript - 내부 함수
+  JavaScript - 내부 함수
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 16일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -25,13 +25,13 @@ categories:
 
 ```javascript
 function outerFn() {
-    console.log("outerFn");
+  console.log("outerFn");
 
-    //내부함수
-    function innerFn() {
-        console.log("innerFn");
-    }
-    innerFn(); // 내부함수 호출
+  //내부함수
+  function innerFn() {
+    console.log("innerFn");
+  }
+  innerFn(); // 내부함수 호출
 }
 outerFn();
 ```

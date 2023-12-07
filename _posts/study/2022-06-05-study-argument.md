@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - Arguments
 tags: JavaScript Arguments
 description: >
-    JavaScript - Arguments
+  JavaScript - Arguments
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 16일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -26,12 +26,12 @@ categories:
 
 ```javascript
 function fn() {
-    //   console.log(arguments);
-    //   console.log(arguments.length);
+  //   console.log(arguments);
+  //   console.log(arguments.length);
 
-    for (var i = 0; i < arguments.length; i++) {
-        console.log("호출 시 넘어 온 매개변수 개수 : " + arguments[i]);
-    }
+  for (var i = 0; i < arguments.length; i++) {
+    console.log("호출 시 넘어 온 매개변수 개수 : " + arguments[i]);
+  }
 }
 // 결과 :
 // {}

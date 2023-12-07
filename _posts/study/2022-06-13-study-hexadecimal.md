@@ -3,15 +3,15 @@ layout: post
 title: 16진수를 2진수로, 2진수를 8진수로 변환
 tags: 16진수 8진수 2진수 10진수 이진수 십진수 16진수를2진수로 2진수를8진수로 이진수를8진수로변환 진수변환 진수
 description: >
-    16진수를 2진수로, 2진수를 8진수로 변환
+  16진수를 2진수로, 2진수를 8진수로 변환
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 ---

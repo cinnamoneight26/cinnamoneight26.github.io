@@ -3,15 +3,15 @@ layout: post
 title: HTTP 기본
 tags: HTTP stateful stateless
 description: >
-    인프런 - 모든 개발자를 위한 HTTP 웹 기본 지식 강의 중 섹션 3을 듣고 정리하였습니다.
+  인프런 - 모든 개발자를 위한 HTTP 웹 기본 지식 강의 중 섹션 3을 듣고 정리하였습니다.
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 ---
@@ -22,11 +22,11 @@ categories:
 html, text, image, 음성, 영상, 파일, json, xml 등 거의 모든 형태의 데이터를 전송할 수 있으며
 서버간에 데이터를 주고 받을 때도 대부분 HTTP를 사용합니다.
 
--   HTTP/0.9 (1991년) : GET 메서드만 지원, HTTP 헤더 없음
--   HTTP/1.0 (1996년) : 메서드, 헤더 추가
--   HTTP/1/1 (1997년) : 가장 많이 사용, 우리에게 가장 중요한 버전.
--   HTTP/2 (2015년) : 성능 개선. TCP 기반 프로토콜
--   HTTP/3 진행 중 : TCP 대신 UCP 사용. 성능 개선. UCP 기반 프로토콜
+- HTTP/0.9 (1991년) : GET 메서드만 지원, HTTP 헤더 없음
+- HTTP/1.0 (1996년) : 메서드, 헤더 추가
+- HTTP/1/1 (1997년) : 가장 많이 사용, 우리에게 가장 중요한 버전.
+- HTTP/2 (2015년) : 성능 개선. TCP 기반 프로토콜
+- HTTP/3 진행 중 : TCP 대신 UCP 사용. 성능 개선. UCP 기반 프로토콜
 
 아래 이미지를 확인해보면 구글에서는 프로토콜 h3이라고 볼 수 있는데 HTTP/3을 사용하고 있다는 의미입니다.
 
@@ -36,10 +36,10 @@ html, text, image, 음성, 영상, 파일, json, xml 등 거의 모든 형태의
 
 HTTP의 특징에 대해서는 아래에서 자세히 기술하겠습니다.
 
--   클라이언트 서버 구조
--   무상태 프로토콜(스테이스리스), 비 연결성
--   HTTP 메시지
--   단순함, 확장 가능
+- 클라이언트 서버 구조
+- 무상태 프로토콜(스테이스리스), 비 연결성
+- HTTP 메시지
+- 단순함, 확장 가능
 
 ### 클라이언트 서버 구조
 
@@ -79,27 +79,27 @@ HTTP 메시지 구조
 
 요청 메시지<br>
 
--   start-line = request-line / status-line
--   request-line = method SP(공백) request-target SP HTTP-version CRLF(엔터)
--   HTTP 메서드<br>
-    종류: GET, POST, PUT, DELETE...<br>
-    서버가 수행해야 할 동작을 지정합니다.(GET: 리소스 조회, POST: 요청 내역 처리)
--   요청 대상 (/search?q=hello&hl=ko)<br>
-    absolute-path[?query] (절대경로[?쿼리])<br>
-    절대 경로: "/"로 시작하는 경로<br>
--   HTTP Version
-    <br><br>
+- start-line = request-line / status-line
+- request-line = method SP(공백) request-target SP HTTP-version CRLF(엔터)
+- HTTP 메서드<br>
+  종류: GET, POST, PUT, DELETE...<br>
+  서버가 수행해야 할 동작을 지정합니다.(GET: 리소스 조회, POST: 요청 내역 처리)
+- 요청 대상 (/search?q=hello&hl=ko)<br>
+  absolute-path[?query] (절대경로[?쿼리])<br>
+  절대 경로: "/"로 시작하는 경로<br>
+- HTTP Version
+  <br><br>
 
 응답 메시지<br>
 
--   start-line = request-line / status-line
--   status-line = HTTP-version SP status-code SP reason-phrase CRLF
--   HTTP 버전
--   HTTP 상태 코드: 요청 성공, 실패를 나타냄
-    200: 성공
-    400: 클라이언트 요청 오류
-    500: 서버 내부 오류
--   이유 문구: 사람이 이해할 수 있는 짧은 상태 코드 설명 글(OK)
+- start-line = request-line / status-line
+- status-line = HTTP-version SP status-code SP reason-phrase CRLF
+- HTTP 버전
+- HTTP 상태 코드: 요청 성공, 실패를 나타냄
+  200: 성공
+  400: 클라이언트 요청 오류
+  500: 서버 내부 오류
+- 이유 문구: 사람이 이해할 수 있는 짧은 상태 코드 설명 글(OK)
 
 <br>
 
@@ -113,8 +113,8 @@ HTTP 전송에 필요한 모든 부가 정보가 다 들어있습니다.<br>
 예를들어 메시지 바디의 내용, 메시지 바디의 크기, 압축, 인증, 요청 클라이언트(브라우저) 정보, 서버 애플리케이션 정보, 캐시 관리 정보 등...<br>
 표준 헤더가 정말 많고, 필요 시 임의의 헤더 추가가 가능합니다.<br><br>
 
--   header-field = field-name ":" OWS(OWS: 띄어쓰기 허용) field-value OWS
--   field-name은 대소문자 구분 없음
+- header-field = field-name ":" OWS(OWS: 띄어쓰기 허용) field-value OWS
+- field-name은 대소문자 구분 없음
 
 <br>
 

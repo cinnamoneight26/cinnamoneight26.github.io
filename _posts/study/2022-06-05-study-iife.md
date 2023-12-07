@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 즉시 실행 함수
 tags: JavaScript IIFE
 description: >
-    JavaScript - 즉시 실행 함수
+  JavaScript - 즉시 실행 함수
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 17일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -26,10 +26,10 @@ categories:
 
 ```javascript
 (function () {
-    console.log("즉시 실행 함수 호출됨");
+  console.log("즉시 실행 함수 호출됨");
 })();
 (function (msg) {
-    console.log("즉시 실행", msg);
+  console.log("즉시 실행", msg);
 })("abc"); // 앞의 괄호에서는 정의. 뒤에는 매개변수의 값을 넣을 수 있다.
 ```
 

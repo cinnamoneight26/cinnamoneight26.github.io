@@ -4,15 +4,15 @@ title: JavaScript - DOM으로 엘리먼트 찾기
 
 tags: JavaScript DOM
 description: >
-    JavaScript - DOM으로 엘리먼트 찾기
+  JavaScript - DOM으로 엘리먼트 찾기
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 18일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -33,42 +33,42 @@ categories:
 
 ```html
 <body>
-    <button onclick="doAction(1);">태그 선택자</button>
-    <button onclick="doAction(2);">아이디 선택자</button>
-    <button onclick="doAction(3);">클래스 선택자</button>
+  <button onclick="doAction(1);">태그 선택자</button>
+  <button onclick="doAction(2);">아이디 선택자</button>
+  <button onclick="doAction(3);">클래스 선택자</button>
 
-    <div>테스트1</div>
-    <div id="a">테스트2</div>
-    <div class="b">테스트3</div>
-    <script>
-        function doAction(type) {
-            switch (type) {
-                case 1: // getElementsByTagName : 태그 이름으로 엘리먼트를 찾는다.
-                    //document.querySelectorAll("div");
-                    var list = document.getElementsByTagName("div"); // 유사 배열 형태
-                    for (let i = 0; i < list.length; i++) {
-                        console.log(list[i].innerText);
-                    }
-                    break;
+  <div>테스트1</div>
+  <div id="a">테스트2</div>
+  <div class="b">테스트3</div>
+  <script>
+    function doAction(type) {
+      switch (type) {
+        case 1: // getElementsByTagName : 태그 이름으로 엘리먼트를 찾는다.
+          //document.querySelectorAll("div");
+          var list = document.getElementsByTagName("div"); // 유사 배열 형태
+          for (let i = 0; i < list.length; i++) {
+            console.log(list[i].innerText);
+          }
+          break;
 
-                case 2: // getElementById : 아이디 검색
-                    // document.querySelector("#a");
+        case 2: // getElementById : 아이디 검색
+          // document.querySelector("#a");
 
-                    var ele = document.getElementById("a"); // id는 한개만 있어서
-                    console.log(ele.innerText);
-                    break;
+          var ele = document.getElementById("a"); // id는 한개만 있어서
+          console.log(ele.innerText);
+          break;
 
-                case 3: // getElementsByClassName : 클래스 검색
-                    // document.querySelectorAll(".b");
-                    var list = document.getElementsByClassName("b");
+        case 3: // getElementsByClassName : 클래스 검색
+          // document.querySelectorAll(".b");
+          var list = document.getElementsByClassName("b");
 
-                    for (let i = 0; i < list.length; i++) {
-                        console.log(list[i].innerText);
-                    }
-                    break;
-            }
-        }
-    </script>
+          for (let i = 0; i < list.length; i++) {
+            console.log(list[i].innerText);
+          }
+          break;
+      }
+    }
+  </script>
 </body>
 ```
 

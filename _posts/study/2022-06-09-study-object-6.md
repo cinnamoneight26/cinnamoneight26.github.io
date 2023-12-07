@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 객체와 프로토타입(prototype)
 tags: JavaScript object 객체 prototype
 description: >
-    JavaScript - 객체와 프로토타입(prototype)
+  JavaScript - 객체와 프로토타입(prototype)
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 18일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -37,11 +37,11 @@ categories:
 
 ```javascript
 function Member(id, name, email) {
-    // function Member(id, name, email) 하나의 객체
-    this.id = id;
-    this.name = name;
-    this.email = email;
-    /*
+  // function Member(id, name, email) 하나의 객체
+  this.id = id;
+  this.name = name;
+  this.email = email;
+  /*
 
     //각 객체에 할당되는 부분을 부모의 prototype 공간에 설정 (메모리를 효율적으로 사용하기 위해서)
     this.info = function(){                                         
@@ -50,7 +50,7 @@ function Member(id, name, email) {
     */
 }
 Member.prototype.info = function () {
-    console.log(this.id, this.name, this.email);
+  console.log(this.id, this.name, this.email);
 };
 // new Member 매개변수를 주던 안 주던 새로운 객체가 생성됨. 해당 객체의 부모는 function Member()
 var m1 = new Member("hong", "홍길동", "hong@a.com");

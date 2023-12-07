@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 동적으로 엘리먼트 추가하기
 tags: JavaScript
 description: >
-    JavaScript - 동적으로 엘리먼트 추가하기
+  JavaScript - 동적으로 엘리먼트 추가하기
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 19일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -51,26 +51,26 @@ divList.appendChile(divEle)<br>
 
 ```html
 <body>
-    <button onclick="doAdd();">추가</button>
-    <div id="list"></div>
+  <button onclick="doAdd();">추가</button>
+  <div id="list"></div>
 
-    <script>
-        var count = 1;
-        function doAdd() {
-            var list = document.querySelector("#list");
+  <script>
+    var count = 1;
+    function doAdd() {
+      var list = document.querySelector("#list");
 
-            //list.innerHTML = "<h2>추가" + count++ + "</h2>"
+      //list.innerHTML = "<h2>추가" + count++ + "</h2>"
 
-            // list.innerHTML += "<h2>추가" + count++ + "</h2>"
+      // list.innerHTML += "<h2>추가" + count++ + "</h2>"
 
-            // createElement 사용하기
-            var h2 = document.createElement("h2"); // <h2></h2>
-            var txt = document.createTextNode("추가" + count++);
+      // createElement 사용하기
+      var h2 = document.createElement("h2"); // <h2></h2>
+      var txt = document.createTextNode("추가" + count++);
 
-            h2.appendChild(txt); // <h2>추가?</h2>
+      h2.appendChild(txt); // <h2>추가?</h2>
 
-            list.appendChild(h2);
-        }
-    </script>
+      list.appendChild(h2);
+    }
+  </script>
 </body>
 ```

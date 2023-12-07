@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - filter
 tags: JavaScript filter
 description: >
-    JavaScript - filter
+  JavaScript - filter
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 18일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -30,38 +30,38 @@ var data = [3, 9, 27, 81, 43];
 // 30보다 큰 수만 배열에 담기
 var rList = [];
 for (var i = 0; i < data.length; i++) {
-    if (data[i] > 30) {
-        rList.push(data[i]);
-    }
+  if (data[i] > 30) {
+    rList.push(data[i]);
+  }
 }
 console.log(rList);
 
 // 10보다 작은 숫자들을 배열에 담는다.
 var oList = [];
 for (let i = 0; i < data.length; i++) {
-    if (data[i] < 10) {
-        oList.push(data[i]);
-    }
+  if (data[i] < 10) {
+    oList.push(data[i]);
+  }
 }
 console.log(oList);
 
 // 배열에서 조건에 맞는  데이터를 새로운 배열에 담아서 리턴한다.
 function arrFilter(data, cb) {
-    var rList = [];
-    for (var i = 0; i < data.length; i++) {
-        if (cb(data[i])) {
-            // 조건이 참일 때 push
-            rList.push(data[i]);
-        }
+  var rList = [];
+  for (var i = 0; i < data.length; i++) {
+    if (cb(data[i])) {
+      // 조건이 참일 때 push
+      rList.push(data[i]);
     }
-    return rList;
+  }
+  return rList;
 }
 // ********** 이 부분이 필터 사용
 
 console.log(
-    arrFilter([8, 11, 90, 53, 22], function (val) {
-        return val < 10;
-    })
+  arrFilter([8, 11, 90, 53, 22], function (val) {
+    return val < 10;
+  })
 );
 ```
 
@@ -71,7 +71,7 @@ console.log(
 
 ```javascript
 var result = [1, 2, 3, 4, 5].filter(function (val) {
-    return val > 2;
+  return val > 2;
 });
 console.log(result);
 ```

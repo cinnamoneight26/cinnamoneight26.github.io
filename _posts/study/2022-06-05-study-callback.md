@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - callback
 tags: JavaScript callback
 description: >
-    JavaScript - callback
+  JavaScript - callback
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 17일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -25,7 +25,7 @@ categories:
 
 ```javascript
 function fn() {
-    console.log("fn 호출됨");
+  console.log("fn 호출됨");
 }
 
 //함수는 객체의 값처럼 사용 가능하기 때문에 변수에 담을 수 있다.
@@ -49,12 +49,12 @@ fn 호출됨<br>
 
 ```javascript
 function fn(cb) {
-    console.log(typeof cb);
-    cb(); // 함수 형태의 값을 가지고 있어야 함 ()가 붙었음. cb에 들어온 함수를 받아서 실행
+  console.log(typeof cb);
+  cb(); // 함수 형태의 값을 가지고 있어야 함 ()가 붙었음. cb에 들어온 함수를 받아서 실행
 }
 
 fn(function () {
-    console.log("익명 함수 실행됨");
+  console.log("익명 함수 실행됨");
 });
 
 // 화살표 함수 변경

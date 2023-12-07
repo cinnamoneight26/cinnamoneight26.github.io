@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 특정 시간 뒤 함수 실행(SetTimeout)
 tags: JavaScript settimeout
 description: >
-    JavaScript - 특정 시간 뒤 함수 실행(settimeout)
+  JavaScript - 특정 시간 뒤 함수 실행(settimeout)
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 17일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -37,22 +37,22 @@ console.log("setTimeout 설정 후..."); // 10초 후에 실행되는 것이 아
 
 ```javascript
 function fn() {
-    var date = new Date();
-    var time = date.toLocaleTimeString();
+  var date = new Date();
+  var time = date.toLocaleTimeString();
 
-    console.log(time);
+  console.log(time);
 
-    var id = setTimeout(fn, 1000); // fn()함수가 끝나면 다시 실행
-    //취소하기
-    clearTimeout(id);
+  var id = setTimeout(fn, 1000); // fn()함수가 끝나면 다시 실행
+  //취소하기
+  clearTimeout(id);
 }
 fn();
 
 function fn2(count, msg) {
-    var id = setTimeout(fn2, 1000, --count, msg);
-    console.log("count : ", count, ", msg :", msg);
+  var id = setTimeout(fn2, 1000, --count, msg);
+  console.log("count : ", count, ", msg :", msg);
 
-    if (count == 0) clearTimeout(id);
+  if (count == 0) clearTimeout(id);
 }
 fn2(10, "hi");
 ```

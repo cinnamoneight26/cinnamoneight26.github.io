@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 글로벌 변수와 로컬 변수
 tags: JavaScript 글로벌변수 로컬변수
 description: >
-    JavaScript - 글로벌 변수와 로컬 변수
+  JavaScript - 글로벌 변수와 로컬 변수
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 16일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -28,9 +28,9 @@ var msg = "글로벌 변수";
 console.log("msg : ", msg);
 
 function fn() {
-    var localMsg = "로컬 변수";
-    console.log("msg - fn :", msg);
-    console.log("localMsg - fn :", localMsg);
+  var localMsg = "로컬 변수";
+  console.log("msg - fn :", msg);
+  console.log("localMsg - fn :", localMsg);
 }
 fn();
 ```
@@ -51,9 +51,9 @@ var msg2 = "test";
 console.log("msg : ", msg);
 
 function fn() {
-    var msg = "로컬 변수";
-    console.log("msg - fn : ", msg);
-    console.log("msg2 : " + msg2); // 내 영역에서 못 찾으면 나를 호출한 쪽을 찾는다. 스코프 체인
+  var msg = "로컬 변수";
+  console.log("msg - fn : ", msg);
+  console.log("msg2 : " + msg2); // 내 영역에서 못 찾으면 나를 호출한 쪽을 찾는다. 스코프 체인
 }
 fn(); // 전역 컨텍스트에 존재함
 
@@ -73,13 +73,13 @@ msg fn 호출 후 글로벌 변수<br>
 
 ```javascript
 function fn() {
-    var i = 100;
-    if (i % 2 == 0) {
-        let msg = "짝수";
-    }
-    for (let k = 1; k <= 5; k++) {
-        console.log(`${k}는 ${msg}이다`); // msg is not defined
-    }
-    console.log("k", k); // k is not defined
+  var i = 100;
+  if (i % 2 == 0) {
+    let msg = "짝수";
+  }
+  for (let k = 1; k <= 5; k++) {
+    console.log(`${k}는 ${msg}이다`); // msg is not defined
+  }
+  console.log("k", k); // k is not defined
 }
 ```

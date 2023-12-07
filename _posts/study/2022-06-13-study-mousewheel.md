@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 마우스 휠 이벤트 mousewheel, wheel
 tags: JavaScript mousewheel wheel 마우스휠이벤트 휠이벤트
 description: >
-    JavaScript - 마우스 휠 이벤트 mousewheel, wheel
+  JavaScript - 마우스 휠 이벤트 mousewheel, wheel
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 ---
@@ -27,13 +27,13 @@ MDN web docs에 따르면 'mousewheel' 이벤트는 비표준이며, 'wheel'로 
 
 ```javascript
 $(window).bind("wheel", function (event) {
-    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-        // scroll up
-        console.log("스크롤 위로");
-    } else {
-        // scroll down
-        console.log("스크롤 아래로");
-    }
+  if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+    // scroll up
+    console.log("스크롤 위로");
+  } else {
+    // scroll down
+    console.log("스크롤 아래로");
+  }
 });
 ```
 
@@ -71,32 +71,32 @@ event.originalEvent.wheelDelta 로 정보를 받아보면<br>
 
 ```css
 body {
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div {
-    width: 105px;
-    height: 105px;
-    background: #cdf;
-    padding: 5px;
+  width: 105px;
+  height: 105px;
+  background: #cdf;
+  padding: 5px;
 }
 ```
 
 ```javascript
 function zoom(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    scale += event.deltaY * -0.01;
+  scale += event.deltaY * -0.01;
 
-    // Restrict scale
-    scale = Math.min(Math.max(0.125, scale), 4);
+  // Restrict scale
+  scale = Math.min(Math.max(0.125, scale), 4);
 
-    // Apply scale transform
-    el.style.transform = `scale(${scale})`;
+  // Apply scale transform
+  el.style.transform = `scale(${scale})`;
 }
 
 let scale = 1;

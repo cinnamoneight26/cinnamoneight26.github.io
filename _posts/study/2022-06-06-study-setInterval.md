@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 특정 시간 뒤 지속적 함수 실행(SetInterval)
 tags: JavaScript SetInterval
 description: >
-    JavaScript - 특정 시간 뒤 함수 실행(SetInterval)
+  JavaScript - 특정 시간 뒤 함수 실행(SetInterval)
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 17일 당시 공부한 내용을 그대로 옮겨온 글입니다.
@@ -28,14 +28,14 @@ clearInterval(id);<br>
 
 ```javascript
 function fn() {
-    var date = new Date();
-    var time = date.toLocaleTimeString();
+  var date = new Date();
+  var time = date.toLocaleTimeString();
 
-    console.log(time);
+  console.log(time);
 }
 var id = setInterval(fn, 1000); //1초마다 fn 함수를 호출해라
 setTimeout(function () {
-    clearInterval(id);
+  clearInterval(id);
 }, 5100); // 5초 뒤에 멈춰라.
 // setTimeout(function () {}, 5100)
 // clearInterval(id);

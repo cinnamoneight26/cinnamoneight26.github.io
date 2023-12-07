@@ -3,15 +3,15 @@ layout: post
 title: JavaScript - 객체 프로퍼티 삭제
 tags: JavaScript object 객체
 description: >
-    JavaScript - 객체 프로퍼티 삭제
+  JavaScript - 객체 프로퍼티 삭제
 accent_image:
-    background: url('/assets/img/blog/javascript_bg.jpg') center/cover
-    overlay: false
+  background: url('/assets/img/blog/javascript_bg.jpg') center/cover
+  overlay: false
 sitemap: false
 published: true
 # invert_sidebar: true
 categories:
-    - study
+  - 탐구생활
 ---
 
 > ❗️해당 내용은 2018년 4월 18일 당시 공부한 내용을 그대로 옮겨온 글입니다.
