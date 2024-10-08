@@ -2,56 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://chomchomlife.com/googlef8b9e33e9752d574.html</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chomchomlife.com/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chomchomlife.com/page-list/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chomchomlife.com/about/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chomchomlife.com/robots.txt</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chomchomlife.com/tags/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chomchomlife.com/tags/webp/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chomchomlife.com/tags/jekyll/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chomchomlife.com/tags/11ty/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chomchomlife.com/tags/static-site-generator/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
     <loc>https://chomchomlife.com/posts/20240930webp/</loc>
     <lastmod>2024-09-30</lastmod>
   </url>
@@ -62,7 +12,57 @@
   </url>
   
   <url>
+    <loc>https://chomchomlife.com/googlef8b9e33e9752d574.html</loc>
+    <lastmod>2024-10-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chomchomlife.com/</loc>
+    <lastmod>2024-10-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chomchomlife.com/page-list/</loc>
+    <lastmod>2024-10-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chomchomlife.com/about/</loc>
+    <lastmod>2024-10-08</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chomchomlife.com/Portfolio/</loc>
-    <lastmod>2024-10-05</lastmod>
+    <lastmod>2024-10-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chomchomlife.com/robots.txt</loc>
+    <lastmod>2024-10-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chomchomlife.com/tags/</loc>
+    <lastmod>2024-10-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chomchomlife.com/tags/webp/</loc>
+    <lastmod>2024-10-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chomchomlife.com/tags/jekyll/</loc>
+    <lastmod>2024-10-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chomchomlife.com/tags/11ty/</loc>
+    <lastmod>2024-10-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chomchomlife.com/tags/static-site-generator/</loc>
+    <lastmod>2024-10-08</lastmod>
   </url>
 </urlset>
