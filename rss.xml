@@ -6,6 +6,13 @@
         <description>A blog about daily life, hobbies, and the pursuit of knowledge. I share stories, tutorials, and reflections on creativity and growth, with a focus on learning and exploring new ideas.</description>
         
         <item>
+            <title>Deploying Your 11ty Blog on GitHub Pages: A Complete Guide</title>
+            <link>/posts/20241013_/</link>
+            <description>Deploying Your 11ty Blog on GitHub Pages: A Complete Guide Easily deploy your 11ty blog on GitHub Pages and share your content with the world....</description>
+            <pubDate>Sat, 12 Oct 2024 19:00:00 +0000</pubDate>
+        </item>
+        
+        <item>
             <title>Creating a Blog with 11ty: A Simple Step-by-Step Guide</title>
             <link>/posts/20241012_/</link>
             <description>Creating a Blog with 11ty: A Simple Step-by-Step Guide An easy guide for beginners to build modern static blogs using 11ty If you’re looking to create...</description>
