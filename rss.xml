@@ -19,5 +19,12 @@
             <pubDate>Thu, 03 Oct 2024 19:00:00 +0000</pubDate>
         </item>
         
+        <item>
+            <title>Creating a Blog with 11ty: A Simple Step-by-Step Guide</title>
+            <link>/posts/20241012_/</link>
+            <description>Creating a Blog with 11ty: A Simple Step-by-Step Guide An easy guide for beginners to build modern static blogs using 11ty If you’re looking to create...</description>
+            <pubDate>Fri, 11 Oct 2024 19:00:00 +0000</pubDate>
+        </item>
+        
     </channel>
 </rss>
