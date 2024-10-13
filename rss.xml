@@ -6,10 +6,10 @@
         <description>A blog about daily life, hobbies, and the pursuit of knowledge. I share stories, tutorials, and reflections on creativity and growth, with a focus on learning and exploring new ideas.</description>
         
         <item>
-            <title>The Pros and Cons of Using WebP for Blog Images</title>
-            <link>/posts/20240930webp/</link>
-            <description>The Pros and Cons of Using WebP for Blog Images When managing a blog, choosing the right image format is crucial for improving page load speed, user...</description>
-            <pubDate>Sun, 29 Sep 2024 19:00:00 +0000</pubDate>
+            <title>Creating a Blog with 11ty: A Simple Step-by-Step Guide</title>
+            <link>/posts/20241012_/</link>
+            <description>Creating a Blog with 11ty: A Simple Step-by-Step Guide An easy guide for beginners to build modern static blogs using 11ty If you’re looking to create...</description>
+            <pubDate>Fri, 11 Oct 2024 19:00:00 +0000</pubDate>
         </item>
         
         <item>
@@ -20,10 +20,10 @@
         </item>
         
         <item>
-            <title>Creating a Blog with 11ty: A Simple Step-by-Step Guide</title>
-            <link>/posts/20241012_/</link>
-            <description>Creating a Blog with 11ty: A Simple Step-by-Step Guide An easy guide for beginners to build modern static blogs using 11ty If you’re looking to create...</description>
-            <pubDate>Fri, 11 Oct 2024 19:00:00 +0000</pubDate>
+            <title>The Pros and Cons of Using WebP for Blog Images</title>
+            <link>/posts/20240930webp/</link>
+            <description>The Pros and Cons of Using WebP for Blog Images When managing a blog, choosing the right image format is crucial for improving page load speed, user...</description>
+            <pubDate>Sun, 29 Sep 2024 19:00:00 +0000</pubDate>
         </item>
         
     </channel>
