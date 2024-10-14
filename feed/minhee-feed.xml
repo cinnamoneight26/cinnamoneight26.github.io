@@ -242,9 +242,9 @@
 		<link href="https://ineeth.com/posts/20241013_/"/>
 		<updated>2024-10-13T00:00:00Z</updated>
 		<id>https://ineeth.com/posts/20241013_/</id>
-		<content type="html">&lt;h1 id=&quot;deploying-your-11ty-blog-on-github-pages%3A-a-complete-guide&quot;&gt;Deploying Your 11ty Blog on GitHub Pages: A Complete Guide &lt;a class=&quot;direct-link&quot; href=&quot;https://ineeth.com/posts/20241013_/#deploying-your-11ty-blog-on-github-pages%3A-a-complete-guide&quot;&gt;&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Easily deploy your 11ty blog on GitHub Pages and share your content with the world.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Creating a static blog with 11ty is just the beginning. The next step is to deploy it, making your blog accessible online. One of the easiest ways to achieve this is by using &lt;strong&gt;GitHub Pages&lt;/strong&gt;, a free hosting service for static websites. This guide will walk you through the entire process of deploying your 11ty blog on GitHub Pages.&lt;/p&gt;
+		<content type="html">&lt;h1 id=&quot;deploying-your-11ty-blog-on-github-pages%3A-a-full-guide&quot;&gt;Deploying Your 11ty Blog on GitHub Pages: A Full Guide &lt;a class=&quot;direct-link&quot; href=&quot;https://ineeth.com/posts/20241013_/#deploying-your-11ty-blog-on-github-pages%3A-a-full-guide&quot;&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Easily deploy your 11ty blog to GitHub Pages and share your content with the world…&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Until now, creating an 11ty static blog was just the beginning. Now, you will need to deploy it so that everyone can see it online. One of the easiest ways to do that in this modern world is through &lt;strong&gt;GitHub Pages&lt;/strong&gt;; it will host your static website for free. I’ll take you through the whole deployment process for the 11ty blog on GitHub Pages here.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites &lt;a class=&quot;direct-link&quot; href=&quot;https://ineeth.com/posts/20241013_/#prerequisites&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Before getting started, ensure you have the following:&lt;/p&gt;
@@ -275,44 +275,42 @@
 &lt;p&gt;Push your local commits to GitHub:&lt;/p&gt;
 &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push &lt;span class=&quot;token parameter variable&quot;&gt;-u&lt;/span&gt; origin main&lt;/code&gt;&lt;/pre&gt;
 &lt;hr /&gt;
-&lt;h2 id=&quot;step-4%3A-configure-github-pages&quot;&gt;Step 4: Configure GitHub Pages &lt;a class=&quot;direct-link&quot; href=&quot;https://ineeth.com/posts/20241013_/#step-4%3A-configure-github-pages&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;step-4%3A-configuring-github-pages&quot;&gt;Step 4: Configuring GitHub Pages &lt;a class=&quot;direct-link&quot; href=&quot;https://ineeth.com/posts/20241013_/#step-4%3A-configuring-github-pages&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to the &lt;strong&gt;Settings&lt;/strong&gt; tab of your repository on GitHub.&lt;/li&gt;
+&lt;li&gt;In your repository in GitHub, click the &lt;strong&gt;Settings&lt;/strong&gt; tab.&lt;/li&gt;
 &lt;li&gt;Scroll down to &lt;strong&gt;Pages&lt;/strong&gt; in the left sidebar.&lt;/li&gt;
 &lt;li&gt;Under “Source,” select &lt;strong&gt;Deploy from branch&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;Choose the &lt;strong&gt;main&lt;/strong&gt; branch and &lt;code&gt;/ (root)&lt;/code&gt; as the folder.&lt;/li&gt;
-&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt; to enable GitHub Pages.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt; and this will enable GitHub Pages.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Your blog will be available at &lt;code&gt;https://your-username.github.io/my-eleventy-blog/&lt;/code&gt; within a few minutes.&lt;/p&gt;
+&lt;p&gt;Within a few minutes, your blog will be ready at &lt;code&gt;https://your-username.github.io/my-eleventy-blog/&lt;/code&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&quot;step-5%3A-create-a-gh-pages-branch-(optional)&quot;&gt;Step 5: Create a &lt;code&gt;gh-pages&lt;/code&gt; Branch (Optional) &lt;a class=&quot;direct-link&quot; href=&quot;https://ineeth.com/posts/20241013_/#step-5%3A-create-a-gh-pages-branch-(optional)&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;For cleaner deployments, you can create a dedicated &lt;code&gt;gh-pages&lt;/code&gt; branch. Run the following commands:&lt;/p&gt;
+&lt;p&gt;You may want to create a dedicated &lt;code&gt;gh-pages&lt;/code&gt; branch for cleaner deployments. Execute the following command:&lt;/p&gt;
 &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; checkout &lt;span class=&quot;token parameter variable&quot;&gt;--orphan&lt;/span&gt; gh-pages&lt;br /&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; reset &lt;span class=&quot;token parameter variable&quot;&gt;--hard&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; commit --allow-empty &lt;span class=&quot;token parameter variable&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Initial commit for gh-pages&quot;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push origin gh-pages&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In &lt;strong&gt;GitHub Pages settings&lt;/strong&gt;, set the source to the &lt;code&gt;gh-pages&lt;/code&gt; branch.&lt;/p&gt;
+&lt;p&gt;Changing in &lt;strong&gt;GitHub Pages settings&lt;/strong&gt;, source should point to the gh-pages branch.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&quot;step-6%3A-automate-deployments-with-github-actions&quot;&gt;Step 6: Automate Deployments with GitHub Actions &lt;a class=&quot;direct-link&quot; href=&quot;https://ineeth.com/posts/20241013_/#step-6%3A-automate-deployments-with-github-actions&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;To automatically deploy your blog each time you push changes, create a GitHub Actions workflow:&lt;/p&gt;
+&lt;p&gt;To automatically publish your blog whenever you push changes, a GitHub Actions workflow should be created:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;In your project folder, create &lt;code&gt;.github/workflows/deploy.yml&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Add the following configuration:&lt;/li&gt;
+&lt;li&gt;In your project directory, create &lt;code&gt;.github/workflows/deploy.yml&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Add the following configurations:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Deploy 11ty Blog&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;token key atrule&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token key atrule&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token key atrule&quot;&gt;branches&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; main&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;token key atrule&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token key atrule&quot;&gt;build-deploy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token key atrule&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ubuntu&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;latest&lt;br /&gt;    &lt;span class=&quot;token key atrule&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actions/checkout@v2&lt;br /&gt;      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Install Node.js&lt;br /&gt;        &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actions/setup&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;node@v2&lt;br /&gt;        &lt;span class=&quot;token key atrule&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;          &lt;span class=&quot;token key atrule&quot;&gt;node-version&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;14&lt;/span&gt;&lt;br /&gt;      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; npm install&lt;br /&gt;      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; npm run build&lt;br /&gt;      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Deploy to GitHub Pages&lt;br /&gt;        &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; peaceiris/actions&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;gh&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;pages@v3&lt;br /&gt;        &lt;span class=&quot;token key atrule&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br /&gt;          &lt;span class=&quot;token key atrule&quot;&gt;github_token&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; $&lt;br /&gt;          &lt;span class=&quot;token key atrule&quot;&gt;publish_dir&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ./_site&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;Commit and push the new workflow:&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Commit and push the new workflow:&lt;/p&gt;
 &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; .github/workflows/deploy.yml&lt;br /&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; commit &lt;span class=&quot;token parameter variable&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Add GitHub Actions workflow for deployment&quot;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push origin main&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, your blog will deploy automatically each time you push changes to the main branch.&lt;/p&gt;
+&lt;p&gt;Now, with this setup, any time changes are pushed to the main branch, your blog will automatically deploy.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id=&quot;step-7%3A-troubleshooting-deployment-issues&quot;&gt;Step 7: Troubleshooting Deployment Issues &lt;a class=&quot;direct-link&quot; href=&quot;https://ineeth.com/posts/20241013_/#step-7%3A-troubleshooting-deployment-issues&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;If your site doesn’t appear, try the following:&lt;/p&gt;
+&lt;p&gt;If you don’t see your site, try the following:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Clear the cache&lt;/strong&gt; in your browser.&lt;/li&gt;
-&lt;li&gt;Make sure that &lt;strong&gt;GitHub Pages&lt;/strong&gt; is correctly configured in the repository settings.&lt;/li&gt;
-&lt;li&gt;Check the &lt;strong&gt;Actions logs&lt;/strong&gt; in GitHub to ensure the deployment workflow ran successfully.&lt;/li&gt;
+&lt;li&gt;Make sure &lt;strong&gt;GitHub Pages&lt;/strong&gt; is configured in the repository settings.&lt;/li&gt;
+&lt;li&gt;In GitHub, verify that the &lt;strong&gt;Actions logs&lt;/strong&gt; show that the deployment workflow completed without errors.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion &lt;a class=&quot;direct-link&quot; href=&quot;https://ineeth.com/posts/20241013_/#conclusion&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Congratulations! You’ve successfully deployed your 11ty blog using GitHub Pages. With automatic deployments and free hosting, GitHub Pages offers an excellent platform to share your content. Now that your blog is live, you can focus on creating great content and exploring more features in 11ty.&lt;/p&gt;
+&lt;p&gt;Woohoo! Your 11ty blog is now live with GitHub Pages! GitHub Pages is a great place to publish your content because GitHub Pages deploys automatically and hosting is free. Now you can focus on creating great content, and explore the rest of the features in 11ty.&lt;/p&gt;
 </content>
 	</entry>
 </feed>
