@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ineeth.com/posts/20241013_%20book/</loc>
+    <lastmod>2017-04-23</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ineeth.com/posts/20240930webp/</loc>
     <lastmod>2024-09-30</lastmod>
   </url>
@@ -37,57 +42,12 @@
   </url>
   
   <url>
+    <loc>https://ineeth.com/tags-list/</loc>
+    <lastmod>2024-10-08</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ineeth.com/tags/</loc>
-    <lastmod>2024-10-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/webp/</loc>
-    <lastmod>2024-10-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/jekyll/</loc>
-    <lastmod>2024-10-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/11ty/</loc>
-    <lastmod>2024-10-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/static-site-generator/</loc>
-    <lastmod>2024-10-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/github-pages/</loc>
-    <lastmod>2024-10-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/static-site-deployment/</loc>
-    <lastmod>2024-10-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/blog-hosting/</loc>
-    <lastmod>2024-10-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/eleventy/</loc>
-    <lastmod>2024-10-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/blog-setup/</loc>
-    <lastmod>2024-10-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/frontend-development/</loc>
     <lastmod>2024-10-08</lastmod>
   </url>
   
@@ -99,5 +59,10 @@
   <url>
     <loc>https://ineeth.com/posts/20241013_/</loc>
     <lastmod>2024-10-13</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ineeth.com/posts/20241014_/</loc>
+    <lastmod>2024-10-14</lastmod>
   </url>
 </urlset>

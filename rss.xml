@@ -6,6 +6,13 @@
         <description>A blog about daily life, hobbies, and the pursuit of knowledge. I share stories, tutorials, and reflections on creativity and growth, with a focus on learning and exploring new ideas.</description>
         
         <item>
+            <title>Efficiently Convert Images to WebP Format: My Journey in Developing an Image Converter</title>
+            <link>/posts/20241014_/</link>
+            <description>Introduction to My Image Converter Hello everyone! In this post, I would like to introduce the image converter I developed, share my experiences...</description>
+            <pubDate>Sun, 13 Oct 2024 19:00:00 +0000</pubDate>
+        </item>
+        
+        <item>
             <title>Deploying Your 11ty Blog on GitHub Pages: A Complete Guide</title>
             <link>/posts/20241013_/</link>
             <description>Deploying Your 11ty Blog on GitHub Pages: A Full Guide Easily deploy your 11ty blog to GitHub Pages and share your content with the world… Until now,...</description>
@@ -31,6 +38,13 @@
             <link>/posts/20240930webp/</link>
             <description>The Pros and Cons of Using WebP for Blog Images When managing a blog, choosing the right image format is crucial for improving page load speed, user...</description>
             <pubDate>Sun, 29 Sep 2024 19:00:00 +0000</pubDate>
+        </item>
+        
+        <item>
+            <title>&#39;Kim Ji-young, Born 1982&#39; / Novel by Cho Nam-joo / Minumsa</title>
+            <link>/posts/20241013_ book/</link>
+            <description>Introduction When I asked my friends what books they were currently reading, I heard the title Kim Ji-young, Born 1982 mentioned a couple of times....</description>
+            <pubDate>Sat, 22 Apr 2017 19:00:00 +0000</pubDate>
         </item>
         
     </channel>
