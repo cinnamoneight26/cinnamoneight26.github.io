@@ -1,12 +1,9 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- SEO Widget Include -->
-    <meta name="google-site-verification" content="rQLUTgfrfsBaGa1eIm0rZ7R8_rSDwntZgqeVmcZy9wE" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="rQLUTgfrfsBaGa1eIm0rZ7R8_rSDwntZgqeVmcZy9wE" />
 <title>Creating a Blog with 11ty: A Simple Step-by-Step Guide</title>
 <meta name="description" content="An easy guide for beginners to build modern static blogs using 11ty.">
 <link rel="icon" type="image/x-icon" href="/img/cinnamonEightLogo.webp" />
@@ -22,8 +19,10 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="/img/20241012.webp">
 <meta name="author" content="Minhee Kim"> 
+<meta name="developer" content="Creativitas"> 
+<meta name="developer:url" content="https://www.fiverr.com/creativitas"> 
 <meta name="robots" content="index, follow">
-<link rel="alternate" href="/feed/minhee-feed.xml" type="application/atom+xml" title="Minhee Kim Blog">
+<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Minhee Kim Blog">
 <link rel="alternate" href="/feed/feed.json" type="application/json" title="Minhee Kim Blog">
 <link rel="canonical" href="https://ineeth.com/posts/20241012_/" />
 
@@ -36,38 +35,30 @@
   gtag('config', '52CNXR8KTE');
 </script>
 
+<!-- Font -->
+<link rel="preload" href="/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2" as="font"
+    type="font/woff2" crossorigin="anonymous">
+    <!-- CSS-->
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/text.css">
+<link rel="stylesheet" href="/css/styles.css">
+<!-- RSS Feed Link 추가 -->
+<link rel="alternate" type="application/rss+xml" title="Minhee Kim Blog RSS" href="/rss.xml">
+<meta name="generator" content="Eleventy v2.0.0">
+<!-- JS -->
+<script defer src="/js/copy-code.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-52CNXR8KTE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/text.css">
-
-    <!-- Font -->
-    <link rel="preload" href="/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2" as="font"
-        type="font/woff2" crossorigin="anonymous">
-
-    <!-- Meta Information -->
-    <meta name="generator" content="Eleventy v2.0.0">
-
-    <!-- RSS Feed Link 추가 -->
-    <link rel="alternate" type="application/rss+xml" title="Minhee Kim Blog RSS" href="/rss.xml">
-    <!-- JS -->
-    <script defer src="/js/copy-code.js"></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52CNXR8KTE"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-52CNXR8KTE');
-    </script>
+    gtag('config', 'G-52CNXR8KTE');
+</script>
 </head>
-
 <body class="bg-light">
-</body>
-
-</html>
 <header class="container bg-white">
 <div class="row">
 <div class="col-md-4 col-2">
@@ -79,31 +70,34 @@ title="Minhee Kim Blog" src="/img/cinnamonEightLogo.webp"></a>
 href="/">Home</a>
 <a class="nav-link " 
 href="/about/">About</a>
+<a class="nav-link" 
+href=""></a>
 </nav>
 </div>
 </header>
 <main>
-    <div class="container bg-white">
-  <div class="row">
-    <img class="img-fluid" height="100%" width="100%" alt="Creating a Blog with 11ty: A Simple Step-by-Step Guide" src="/img/20241012.webp">
-    <div class="col-md-12 p-3">
-      <div class="p-3">
-        <h1><strong><a href="/posts/20241012_/">Creating a Blog with 11ty: A Simple Step-by-Step Guide</a></strong></h1>
-        <h2 class="text-dark mt-3">An easy guide for beginners to build modern static blogs using 11ty.</h2>
-        <div class="mt-3 mb-3">
-          <img src="/img/cinnamonEightLogo.webp" width="40" height="40" class="img-thumbnail rounded-circle">
-          by <a href="https://ineeth.com">Minhee Kim</a>
-          <time datetime="2024-10-12">12 Oct 2024</time>
-        </div>
-        <div class="p-1 mb-3"><a href="/tags/11ty/" class="badge accent-bg-color me-1">11ty</a><a href="/tags/eleventy/" class="badge accent-bg-color me-1">Eleventy</a><a href="/tags/static-site-generator/" class="badge accent-bg-color me-1">Static Site Generator</a><a href="/tags/blog-setup/" class="badge accent-bg-color me-1">Blog Setup</a><a href="/tags/frontend-development/" class="badge accent-bg-color me-1">Frontend Development</a>
-        </div>
-        <div class="editable">
-          <h1 id="creating-a-blog-with-11ty%3A-a-simple-step-by-step-guide">Creating a Blog with 11ty: A Simple Step-by-Step Guide <a class="direct-link" href="#creating-a-blog-with-11ty%3A-a-simple-step-by-step-guide"></a></h1>
+<div class="container bg-white">
+<div class="row">
+<img class="img-fluid" height="100%" width="100%" alt="Creating a Blog with 11ty: A Simple Step-by-Step Guide" src="/img/20241012.webp">
+<div class="col-md-12 p-3">
+<div class="p-3">
+<h1><strong><a href="/posts/20241012_/">Creating a Blog with 11ty: A Simple Step-by-Step Guide</a></strong></h1>
+<h2 class="text-dark mt-3">An easy guide for beginners to build modern static blogs using 11ty.</h2>
+<div class="mt-3 mb-3">
+<img src="/img/cinnamonEightLogo.webp"
+width="40" height="40" class="img-thumbnail rounded-circle"> 
+by <a href="https://ineeth.com">Minhee Kim</a> 
+<time datetime="2024-10-12">12 Oct 2024</time>
+</div>
+<div class="p-1 mb-3"><a href="/tags/11ty/" class="badge bg-point me-1">11ty</a><a href="/tags/eleventy/" class="badge bg-point me-1">eleventy</a><a href="/tags/static-site-generator/" class="badge bg-point me-1">Static Site Generator</a><a href="/tags/blog-setup/" class="badge bg-point me-1">Blog Setup</a><a href="/tags/frontend-development/" class="badge bg-point me-1">Frontend Development</a>
+</div>
+<div class="editable">
+<h1 id="creating-a-blog-with-11ty%3A-a-simple-step-by-step-guide">Creating a Blog with 11ty: A Simple Step-by-Step Guide <a class="direct-link" href="#creating-a-blog-with-11ty%3A-a-simple-step-by-step-guide">#</a></h1>
 <p><strong>An easy guide for beginners to build modern static blogs using 11ty</strong></p>
 <p><img src="https://www.11ty.dev/img/logo-github.svg" alt="11ty Logo"></p>
-<p>If you’re looking to create a blog that is fast, lightweight, and easy to customize, 11ty (Eleventy) might be the perfect fit. Unlike heavier frameworks, 11ty focuses on simplicity and efficiency. This guide will help you build your own 11ty blog step-by-step, whether you’re new to static site generators or switching from another platform.</p>
+<p>If you're looking to create a blog that is fast, lightweight, and easy to customize, 11ty (Eleventy) might be the perfect fit. Unlike heavier frameworks, 11ty focuses on simplicity and efficiency. This guide will help you build your own 11ty blog step-by-step, whether you’re new to static site generators or switching from another platform.</p>
 <hr>
-<h2 id="why-use-11ty%3F">Why Use 11ty? <a class="direct-link" href="#why-use-11ty%3F"></a></h2>
+<h2 id="why-use-11ty%3F">Why Use 11ty? <a class="direct-link" href="#why-use-11ty%3F">#</a></h2>
 <p>Here are a few reasons why developers love 11ty:</p>
 <ul>
 <li><strong>No configuration needed</strong>: Comes with sensible defaults.</li>
@@ -113,7 +107,7 @@ href="/about/">About</a>
 </ul>
 <p>Now, let’s dive into the steps to create your blog.</p>
 <hr>
-<h2 id="prerequisites">Prerequisites <a class="direct-link" href="#prerequisites"></a></h2>
+<h2 id="prerequisites">Prerequisites <a class="direct-link" href="#prerequisites">#</a></h2>
 <p>Ensure you have the following ready before starting:</p>
 <ol>
 <li><strong>Node.js</strong> and <strong>npm</strong> installed.</li>
@@ -122,47 +116,47 @@ href="/about/">About</a>
 <li>Basic knowledge of HTML and Markdown.</li>
 </ol>
 <hr>
-<h2 id="step-1%3A-install-11ty">Step 1: Install 11ty <a class="direct-link" href="#step-1%3A-install-11ty"></a></h2>
+<h2 id="step-1%3A-install-11ty">Step 1: Install 11ty <a class="direct-link" href="#step-1%3A-install-11ty">#</a></h2>
 <p>Run this command to install 11ty globally on your machine:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> @11ty/eleventy</code></pre>
 <p>Once installed, verify the installation:</p>
 <pre class="language-bash"><code class="language-bash">eleventy <span class="token parameter variable">--version</span></code></pre>
-<h2 id="step-2%3A-set-up-your-project">Step 2: Set Up Your Project <a class="direct-link" href="#step-2%3A-set-up-your-project"></a></h2>
+<h2 id="step-2%3A-set-up-your-project">Step 2: Set Up Your Project <a class="direct-link" href="#step-2%3A-set-up-your-project">#</a></h2>
 <p>Create a new folder for your blog and move into it:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> my-eleventy-blog<br><span class="token builtin class-name">cd</span> my-eleventy-blog</code></pre>
 <p>Next, initialize the project with a <code>package.json</code> file:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> init <span class="token parameter variable">-y</span></code></pre>
-<h2 id="step-3%3A-install-11ty-locally">Step 3: Install 11ty Locally <a class="direct-link" href="#step-3%3A-install-11ty-locally"></a></h2>
+<h2 id="step-3%3A-install-11ty-locally">Step 3: Install 11ty Locally <a class="direct-link" href="#step-3%3A-install-11ty-locally">#</a></h2>
 <p>To manage dependencies within your project, install 11ty locally:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> @11ty/eleventy --save-dev</code></pre>
 <p>Add the following scripts to your <code>package.json</code>:</p>
 <pre class="language-json"><code class="language-json"><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>  <span class="token property">"start"</span><span class="token operator">:</span> <span class="token string">"eleventy --serve"</span><span class="token punctuation">,</span><br>  <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"eleventy"</span><br><span class="token punctuation">}</span></code></pre>
-<h2 id="step-4%3A-create-your-first-blog-post">Step 4: Create Your First Blog Post <a class="direct-link" href="#step-4%3A-create-your-first-blog-post"></a></h2>
+<h2 id="step-4%3A-create-your-first-blog-post">Step 4: Create Your First Blog Post <a class="direct-link" href="#step-4%3A-create-your-first-blog-post">#</a></h2>
 <p>Create a directory to hold your posts:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> posts</code></pre>
 <p>Inside that directory, create your first post using Markdown:</p>
 <p><strong>posts/first-post.md</strong>:</p>
 <pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span><br><span class="token front-matter yaml language-yaml">title: "My First Blog Post"<br>date: 2024-10-12<br>tags: ["blog", "first-post"]</span><br><span class="token punctuation">---</span></span><br><br><span class="token title important"><span class="token punctuation">#</span> My First Blog Post  </span><br>Welcome to my first post using 11ty! I'm excited to start this blogging journey.</code></pre>
-<h2 id="step-5%3A-configure-11ty">Step 5: Configure 11ty <a class="direct-link" href="#step-5%3A-configure-11ty"></a></h2>
+<h2 id="step-5%3A-configure-11ty">Step 5: Configure 11ty <a class="direct-link" href="#step-5%3A-configure-11ty">#</a></h2>
 <p>Create a <code>.eleventy.js</code> configuration file at the root of your project:</p>
 <pre class="language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">return</span> <span class="token punctuation">{</span><br>    <span class="token literal-property property">dir</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token literal-property property">input</span><span class="token operator">:</span> <span class="token string">"posts"</span><span class="token punctuation">,</span><br>      <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token string">"_site"</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 <p>This tells 11ty to generate files from the <code>posts</code> folder into the <code>_site</code> directory.</p>
-<h2 id="step-6%3A-run-your-blog-locally">Step 6: Run Your Blog Locally <a class="direct-link" href="#step-6%3A-run-your-blog-locally"></a></h2>
+<h2 id="step-6%3A-run-your-blog-locally">Step 6: Run Your Blog Locally <a class="direct-link" href="#step-6%3A-run-your-blog-locally">#</a></h2>
 <p>Use this command to start the 11ty development server:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> run start</code></pre>
 <p>Open your browser and go to <a href="http://localhost:8080">http://localhost:8080</a> to see your post live!</p>
-<h2 id="step-7%3A-add-some-styling">Step 7: Add Some Styling <a class="direct-link" href="#step-7%3A-add-some-styling"></a></h2>
+<h2 id="step-7%3A-add-some-styling">Step 7: Add Some Styling <a class="direct-link" href="#step-7%3A-add-some-styling">#</a></h2>
 <p>Create a CSS file to style your blog:</p>
 <p><strong>css/styles.css</strong>:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">{</span><br>  <span class="token property">font-family</span><span class="token punctuation">:</span> Arial<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span><br>  <span class="token property">background-color</span><span class="token punctuation">:</span> #f4f4f4<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">h1</span> <span class="token punctuation">{</span><br>  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br>  <span class="token property">margin-top</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <p>Include the CSS file in your layout template:</p>
 <p><strong>_includes/layout.njk</strong>:</p>
 <pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/css/styles.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Creating a Blog with 11ty: A Simple Step-by-Step Guide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Creating a Blog with 11ty: A Simple Step-by-Step Guide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">></span></span><br>    <br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
-<h2 id="step-8%3A-build-for-production">Step 8: Build for Production <a class="direct-link" href="#step-8%3A-build-for-production"></a></h2>
-<p>When you’re ready to deploy your blog, run:</p>
+<h2 id="step-8%3A-build-for-production">Step 8: Build for Production <a class="direct-link" href="#step-8%3A-build-for-production">#</a></h2>
+<p>When you're ready to deploy your blog, run:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> run build</code></pre>
 <p>This command generates your static site in the <code>_site</code> folder.</p>
-<h2 id="step-9%3A-deploy-your-blog">Step 9: Deploy Your Blog <a class="direct-link" href="#step-9%3A-deploy-your-blog"></a></h2>
+<h2 id="step-9%3A-deploy-your-blog">Step 9: Deploy Your Blog <a class="direct-link" href="#step-9%3A-deploy-your-blog">#</a></h2>
 <p>To deploy with GitHub Pages:</p>
 <ol>
 <li>Push your code to a GitHub repository.</li>
@@ -171,48 +165,29 @@ href="/about/">About</a>
 </ol>
 <p>Alternatively, deploy with Netlify:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> netlify-cli<br>netlify deploy</code></pre>
-<h2 id="conclusion">Conclusion <a class="direct-link" href="#conclusion"></a></h2>
-<p>Congratulations! You’ve successfully built a blog with 11ty. This setup offers incredible flexibility and performance without unnecessary complexity. Explore 11ty’s advanced features, such as pagination and custom collections, to enhance your blog even further.</p>
+<h2 id="conclusion">Conclusion <a class="direct-link" href="#conclusion">#</a></h2>
+<p>Congratulations! You've successfully built a blog with 11ty. This setup offers incredible flexibility and performance without unnecessary complexity. Explore 11ty's advanced features, such as pagination and custom collections, to enhance your blog even further.</p>
 
-        </div>
-        <hr class="bg-primary">
-        <div class="row p-3">
-
-          
-          <a class="col-6 p-1" href="/posts/20241013_/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
-            </svg>
-            Deploying Your 11ty Blog on GitHub Pages: A Complete Guide
-          </a>
-          <a class="col-6 text-end" href="/posts/20241004_11ty/">
-            Why I Switched from Jekyll to 11ty
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-            </svg>
-          </a>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
 </div>
-
+<hr class="bg-primary">
+<div class="row p-3"><a class="col-6 p-1" href="/posts/20241004_11ty/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+</svg> Why I Switched from Jekyll to 11ty</a><a class="col-6 p-1 text-end" href="/posts/20241013_/">Deploying Your 11ty Blog on GitHub Pages: A Complete Guide <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg></a>
+</div>
+</div>
+</div>
+</div>
 </main>
 <footer class="container bg-white">
 <div class="row text-center">
-    <div class="col-md-12 p-3 col-12 mt-5">
-        <div class="col-md-3 mx-auto">
-            <img src="/img/cinnamonEightNameLogo.webp" class="img-fluid" loading="lazy" height="200" width="200" " alt="Minhee Kim Blog">
-        </div>
-    </div>
-    <div>
-        © 2024. All rights reserved. Powered by cinnamon.eight
-    </div>
+<div class="col-md-12 p-3 col-12 mt-5">
+<div class="col-md-3 mx-auto">
+<img src="/img/cinnamonEightNameLogo.webp" class="img-fluid" loading="lazy" height="200" width="200" " alt="Minhee Kim Blog">
+</div>
+</div>
+
+</div>
 </div>
 </footer>

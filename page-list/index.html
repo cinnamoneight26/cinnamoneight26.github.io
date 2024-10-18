@@ -1,12 +1,9 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- SEO Widget Include -->
-    <meta name="google-site-verification" content="rQLUTgfrfsBaGa1eIm0rZ7R8_rSDwntZgqeVmcZy9wE" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="rQLUTgfrfsBaGa1eIm0rZ7R8_rSDwntZgqeVmcZy9wE" />
 <title>Minhee Kim Blog</title>
 <meta name="description" content="A blog about daily life, hobbies, and the pursuit of knowledge. I share stories, tutorials, and reflections on creativity and growth, with a focus on learning and exploring new ideas.">
 <link rel="icon" type="image/x-icon" href="/img/cinnamonEightLogo.webp" />
@@ -22,8 +19,10 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="/img/cinnamonEightCorver.webp">
 <meta name="author" content="Minhee Kim"> 
+<meta name="developer" content="Creativitas"> 
+<meta name="developer:url" content="https://www.fiverr.com/creativitas"> 
 <meta name="robots" content="index, follow">
-<link rel="alternate" href="/feed/minhee-feed.xml" type="application/atom+xml" title="Minhee Kim Blog">
+<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Minhee Kim Blog">
 <link rel="alternate" href="/feed/feed.json" type="application/json" title="Minhee Kim Blog">
 <link rel="canonical" href="https://ineeth.com/page-list/" />
 
@@ -36,38 +35,30 @@
   gtag('config', '52CNXR8KTE');
 </script>
 
+<!-- Font -->
+<link rel="preload" href="/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2" as="font"
+    type="font/woff2" crossorigin="anonymous">
+    <!-- CSS-->
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/text.css">
+<link rel="stylesheet" href="/css/styles.css">
+<!-- RSS Feed Link 추가 -->
+<link rel="alternate" type="application/rss+xml" title="Minhee Kim Blog RSS" href="/rss.xml">
+<meta name="generator" content="Eleventy v2.0.0">
+<!-- JS -->
+<script defer src="/js/copy-code.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-52CNXR8KTE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/text.css">
-
-    <!-- Font -->
-    <link rel="preload" href="/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2" as="font"
-        type="font/woff2" crossorigin="anonymous">
-
-    <!-- Meta Information -->
-    <meta name="generator" content="Eleventy v2.0.0">
-
-    <!-- RSS Feed Link 추가 -->
-    <link rel="alternate" type="application/rss+xml" title="Minhee Kim Blog RSS" href="/rss.xml">
-    <!-- JS -->
-    <script defer src="/js/copy-code.js"></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52CNXR8KTE"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-52CNXR8KTE');
-    </script>
+    gtag('config', 'G-52CNXR8KTE');
+</script>
 </head>
-
 <body class="bg-light">
-</body>
-
-</html>
 <header class="container bg-white">
 <div class="row">
 <div class="col-md-4 col-2">
@@ -79,11 +70,13 @@ title="Minhee Kim Blog" src="/img/cinnamonEightLogo.webp"></a>
 href="/">Home</a>
 <a class="nav-link " 
 href="/about/">About</a>
+<a class="nav-link" 
+href=""></a>
 </nav>
 </div>
 </header>
 <main>
-    <table>
+<table>
   <thead>
     <tr>
       <th>URL</th>
@@ -92,16 +85,8 @@ href="/about/">About</a>
   </thead>
   <tbody>
   <tr>
-    <td><a href="/posts/20241013_ book/"><code>/posts/20241013_ book/</code></a></td>
+    <td><a href="/posts/20241013_book/"><code>/posts/20241013_book/</code></a></td>
     <td>&#39;Kim Ji-young, Born 1982&#39; / Novel by Cho Nam-joo / Minumsa</td>
-  </tr>
-  <tr>
-    <td><a href="/posts/20240930webp/"><code>/posts/20240930webp/</code></a></td>
-    <td>The Pros and Cons of Using WebP for Blog Images</td>
-  </tr>
-  <tr>
-    <td><a href="/posts/20241004_11ty/"><code>/posts/20241004_11ty/</code></a></td>
-    <td>Why I Switched from Jekyll to 11ty</td>
   </tr>
   <tr>
     <td><a href="/"><code>/</code></a></td>
@@ -112,15 +97,7 @@ href="/about/">About</a>
     <td>About</td>
   </tr>
   <tr>
-    <td><a href="/Portfolio/"><code>/Portfolio/</code></a></td>
-    <td>Portfolio</td>
-  </tr>
-  <tr>
     <td><a href="/robots.txt"><code>/robots.txt</code></a></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><a href="/tags-list/"><code>/tags-list/</code></a></td>
     <td></td>
   </tr>
   <tr>
@@ -128,16 +105,64 @@ href="/about/">About</a>
     <td></td>
   </tr>
   <tr>
-    <td><a href="/posts/20241012_/"><code>/posts/20241012_/</code></a></td>
-    <td>Creating a Blog with 11ty: A Simple Step-by-Step Guide</td>
+    <td><a href="/tags/jekyll/"><code>/tags/jekyll/</code></a></td>
+    <td>Tagged “Jekyll”</td>
   </tr>
   <tr>
-    <td><a href="/posts/20241013_/"><code>/posts/20241013_/</code></a></td>
-    <td>Deploying Your 11ty Blog on GitHub Pages: A Complete Guide</td>
+    <td><a href="/tags/11ty/"><code>/tags/11ty/</code></a></td>
+    <td>Tagged “11ty”</td>
   </tr>
   <tr>
-    <td><a href="/posts/20241014_/"><code>/posts/20241014_/</code></a></td>
-    <td>Efficiently Convert Images to WebP Format: My Journey in Developing an Image Converter</td>
+    <td><a href="/tags/static-site-generator/"><code>/tags/static-site-generator/</code></a></td>
+    <td>Tagged “Static Site Generator”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/webp/"><code>/tags/webp/</code></a></td>
+    <td>Tagged “WebP”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/eleventy/"><code>/tags/eleventy/</code></a></td>
+    <td>Tagged “eleventy”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/blog-setup/"><code>/tags/blog-setup/</code></a></td>
+    <td>Tagged “Blog Setup”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/frontend-development/"><code>/tags/frontend-development/</code></a></td>
+    <td>Tagged “Frontend Development”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/books/"><code>/tags/books/</code></a></td>
+    <td>Tagged “Books”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/feminism/"><code>/tags/feminism/</code></a></td>
+    <td>Tagged “Feminism”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/gender-issues/"><code>/tags/gender-issues/</code></a></td>
+    <td>Tagged “Gender issues”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/image-conversion/"><code>/tags/image-conversion/</code></a></td>
+    <td>Tagged “Image Conversion”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/react/"><code>/tags/react/</code></a></td>
+    <td>Tagged “React”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/web-optimization/"><code>/tags/web-optimization/</code></a></td>
+    <td>Tagged “Web Optimization”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/development-journey/"><code>/tags/development-journey/</code></a></td>
+    <td>Tagged “Development Journey”</td>
+  </tr>
+  <tr>
+    <td><a href="/tags/github-pages/"><code>/tags/github-pages/</code></a></td>
+    <td>Tagged “GitHub Pages”</td>
   </tr>
   </tbody>
 </table>
@@ -146,13 +171,12 @@ href="/about/">About</a>
 </main>
 <footer class="container bg-white">
 <div class="row text-center">
-    <div class="col-md-12 p-3 col-12 mt-5">
-        <div class="col-md-3 mx-auto">
-            <img src="/img/cinnamonEightNameLogo.webp" class="img-fluid" loading="lazy" height="200" width="200" " alt="Minhee Kim Blog">
-        </div>
-    </div>
-    <div>
-        © 2024. All rights reserved. Powered by cinnamon.eight
-    </div>
+<div class="col-md-12 p-3 col-12 mt-5">
+<div class="col-md-3 mx-auto">
+<img src="/img/cinnamonEightNameLogo.webp" class="img-fluid" loading="lazy" height="200" width="200" " alt="Minhee Kim Blog">
+</div>
+</div>
+
+</div>
 </div>
 </footer>

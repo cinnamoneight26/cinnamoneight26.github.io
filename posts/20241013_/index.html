@@ -1,12 +1,9 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- SEO Widget Include -->
-    <meta name="google-site-verification" content="rQLUTgfrfsBaGa1eIm0rZ7R8_rSDwntZgqeVmcZy9wE" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="rQLUTgfrfsBaGa1eIm0rZ7R8_rSDwntZgqeVmcZy9wE" />
 <title>Deploying Your 11ty Blog on GitHub Pages: A Complete Guide</title>
 <meta name="description" content="A detailed tutorial to deploy your 11ty blog using GitHub Pages.">
 <link rel="icon" type="image/x-icon" href="/img/cinnamonEightLogo.webp" />
@@ -22,8 +19,10 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="/img/20241013.webp">
 <meta name="author" content="Minhee Kim"> 
+<meta name="developer" content="Creativitas"> 
+<meta name="developer:url" content="https://www.fiverr.com/creativitas"> 
 <meta name="robots" content="index, follow">
-<link rel="alternate" href="/feed/minhee-feed.xml" type="application/atom+xml" title="Minhee Kim Blog">
+<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Minhee Kim Blog">
 <link rel="alternate" href="/feed/feed.json" type="application/json" title="Minhee Kim Blog">
 <link rel="canonical" href="https://ineeth.com/posts/20241013_/" />
 
@@ -36,38 +35,30 @@
   gtag('config', '52CNXR8KTE');
 </script>
 
+<!-- Font -->
+<link rel="preload" href="/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2" as="font"
+    type="font/woff2" crossorigin="anonymous">
+    <!-- CSS-->
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/text.css">
+<link rel="stylesheet" href="/css/styles.css">
+<!-- RSS Feed Link 추가 -->
+<link rel="alternate" type="application/rss+xml" title="Minhee Kim Blog RSS" href="/rss.xml">
+<meta name="generator" content="Eleventy v2.0.0">
+<!-- JS -->
+<script defer src="/js/copy-code.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-52CNXR8KTE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/text.css">
-
-    <!-- Font -->
-    <link rel="preload" href="/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2" as="font"
-        type="font/woff2" crossorigin="anonymous">
-
-    <!-- Meta Information -->
-    <meta name="generator" content="Eleventy v2.0.0">
-
-    <!-- RSS Feed Link 추가 -->
-    <link rel="alternate" type="application/rss+xml" title="Minhee Kim Blog RSS" href="/rss.xml">
-    <!-- JS -->
-    <script defer src="/js/copy-code.js"></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52CNXR8KTE"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-52CNXR8KTE');
-    </script>
+    gtag('config', 'G-52CNXR8KTE');
+</script>
 </head>
-
 <body class="bg-light">
-</body>
-
-</html>
 <header class="container bg-white">
 <div class="row">
 <div class="col-md-4 col-2">
@@ -79,30 +70,33 @@ title="Minhee Kim Blog" src="/img/cinnamonEightLogo.webp"></a>
 href="/">Home</a>
 <a class="nav-link " 
 href="/about/">About</a>
+<a class="nav-link" 
+href=""></a>
 </nav>
 </div>
 </header>
 <main>
-    <div class="container bg-white">
-  <div class="row">
-    <img class="img-fluid" height="100%" width="100%" alt="Deploying Your 11ty Blog on GitHub Pages: A Complete Guide" src="/img/20241013.webp">
-    <div class="col-md-12 p-3">
-      <div class="p-3">
-        <h1><strong><a href="/posts/20241013_/">Deploying Your 11ty Blog on GitHub Pages: A Complete Guide</a></strong></h1>
-        <h2 class="text-dark mt-3">A detailed tutorial to deploy your 11ty blog using GitHub Pages.</h2>
-        <div class="mt-3 mb-3">
-          <img src="/img/cinnamonEightLogo.webp" width="40" height="40" class="img-thumbnail rounded-circle">
-          by <a href="https://ineeth.com">Minhee Kim</a>
-          <time datetime="2024-10-13">13 Oct 2024</time>
-        </div>
-        <div class="p-1 mb-3"><a href="/tags/11ty/" class="badge accent-bg-color me-1">11ty</a><a href="/tags/github-pages/" class="badge accent-bg-color me-1">GitHub Pages</a><a href="/tags/static-site-deployment/" class="badge accent-bg-color me-1">Static Site Deployment</a><a href="/tags/blog-hosting/" class="badge accent-bg-color me-1">Blog Hosting</a>
-        </div>
-        <div class="editable">
-          <h1 id="deploying-your-11ty-blog-on-github-pages%3A-a-full-guide">Deploying Your 11ty Blog on GitHub Pages: A Full Guide <a class="direct-link" href="#deploying-your-11ty-blog-on-github-pages%3A-a-full-guide"></a></h1>
-<p><strong>Easily deploy your 11ty blog to GitHub Pages and share your content with the world…</strong></p>
-<p>Until now, creating an 11ty static blog was just the beginning. Now, you will need to deploy it so that everyone can see it online. One of the easiest ways to do that in this modern world is through <strong>GitHub Pages</strong>; it will host your static website for free. I’ll take you through the whole deployment process for the 11ty blog on GitHub Pages here.</p>
+<div class="container bg-white">
+<div class="row">
+<img class="img-fluid" height="100%" width="100%" alt="Deploying Your 11ty Blog on GitHub Pages: A Complete Guide" src="/img/20241013.webp">
+<div class="col-md-12 p-3">
+<div class="p-3">
+<h1><strong><a href="/posts/20241013_/">Deploying Your 11ty Blog on GitHub Pages: A Complete Guide</a></strong></h1>
+<h2 class="text-dark mt-3">A detailed tutorial to deploy your 11ty blog using GitHub Pages.</h2>
+<div class="mt-3 mb-3">
+<img src="/img/cinnamonEightLogo.webp"
+width="40" height="40" class="img-thumbnail rounded-circle"> 
+by <a href="https://ineeth.com">Minhee Kim</a> 
+<time datetime="2024-10-13">13 Oct 2024</time>
+</div>
+<div class="p-1 mb-3"><a href="/tags/11ty/" class="badge bg-point me-1">11ty</a><a href="/tags/github-pages/" class="badge bg-point me-1">GitHub Pages</a><a href="/tags/static-site-deployment/" class="badge bg-point me-1">Static Site Deployment</a><a href="/tags/blog-hosting/" class="badge bg-point me-1">Blog Hosting</a>
+</div>
+<div class="editable">
+<h1 id="deploying-your-11ty-blog-on-github-pages%3A-a-full-guide">Deploying Your 11ty Blog on GitHub Pages: A Full Guide <a class="direct-link" href="#deploying-your-11ty-blog-on-github-pages%3A-a-full-guide">#</a></h1>
+<p><strong>Easily deploy your 11ty blog to GitHub Pages and share your content with the world..</strong></p>
+<p>Until now, creating an 11ty static blog was just the beginning. Now, you will need to deploy it so that everyone can see it online. One of the easiest ways to do that in this modern world is through <strong>GitHub Pages</strong>; it will host your static website for free. I'll take you through the whole deployment process for the 11ty blog on GitHub Pages here.</p>
 <hr>
-<h2 id="prerequisites">Prerequisites <a class="direct-link" href="#prerequisites"></a></h2>
+<h2 id="prerequisites">Prerequisites <a class="direct-link" href="#prerequisites">#</a></h2>
 <p>Before getting started, ensure you have the following:</p>
 <ol>
 <li><strong>A GitHub account</strong></li>
@@ -110,43 +104,43 @@ href="/about/">About</a>
 <li>An existing <strong>11ty blog project</strong></li>
 </ol>
 <hr>
-<h2 id="step-1%3A-initialize-a-local-git-repository">Step 1: Initialize a Local Git Repository <a class="direct-link" href="#step-1%3A-initialize-a-local-git-repository"></a></h2>
-<p>If you haven’t already, navigate to your 11ty project folder and initialize a local Git repository:</p>
+<h2 id="step-1%3A-initialize-a-local-git-repository">Step 1: Initialize a Local Git Repository <a class="direct-link" href="#step-1%3A-initialize-a-local-git-repository">#</a></h2>
+<p>If you haven't already, navigate to your 11ty project folder and initialize a local Git repository:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> my-eleventy-blog<br><span class="token function">git</span> init</code></pre>
 <p>Add all your files to the repository and commit them:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span><br><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"Initial commit for 11ty blog"</span></code></pre>
 <hr>
-<h2 id="step-2%3A-create-a-new-github-repository">Step 2: Create a New GitHub Repository <a class="direct-link" href="#step-2%3A-create-a-new-github-repository"></a></h2>
+<h2 id="step-2%3A-create-a-new-github-repository">Step 2: Create a New GitHub Repository <a class="direct-link" href="#step-2%3A-create-a-new-github-repository">#</a></h2>
 <ol>
 <li>Go to <a href="https://github.com">GitHub</a> and log into your account.</li>
 <li>Click on the <strong>New</strong> button to create a new repository.</li>
 <li>Name your repository (e.g., <code>my-eleventy-blog</code>). You can leave it public or private.</li>
-<li>Do <strong>not</strong> select “Initialize this repository with a README” since your local repository already contains files.</li>
+<li>Do <strong>not</strong> select &quot;Initialize this repository with a README&quot; since your local repository already contains files.</li>
 </ol>
 <p>Copy the repository’s <strong>remote URL</strong> (e.g., <code>https://github.com/your-username/my-eleventy-blog.git</code>).</p>
 <hr>
-<h2 id="step-3%3A-link-your-local-repository-to-github">Step 3: Link Your Local Repository to GitHub <a class="direct-link" href="#step-3%3A-link-your-local-repository-to-github"></a></h2>
+<h2 id="step-3%3A-link-your-local-repository-to-github">Step 3: Link Your Local Repository to GitHub <a class="direct-link" href="#step-3%3A-link-your-local-repository-to-github">#</a></h2>
 <p>Back in your terminal, link your local repository to the new GitHub repository:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">git</span> remote <span class="token function">add</span> origin https://github.com/your-username/my-eleventy-blog.git</code></pre>
 <p>Push your local commits to GitHub:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">git</span> push <span class="token parameter variable">-u</span> origin main</code></pre>
 <hr>
-<h2 id="step-4%3A-configuring-github-pages">Step 4: Configuring GitHub Pages <a class="direct-link" href="#step-4%3A-configuring-github-pages"></a></h2>
+<h2 id="step-4%3A-configuring-github-pages">Step 4: Configuring GitHub Pages <a class="direct-link" href="#step-4%3A-configuring-github-pages">#</a></h2>
 <ol>
 <li>In your repository in GitHub, click the <strong>Settings</strong> tab.</li>
 <li>Scroll down to <strong>Pages</strong> in the left sidebar.</li>
-<li>Under “Source,” select <strong>Deploy from branch</strong>.</li>
+<li>Under &quot;Source,&quot; select <strong>Deploy from branch</strong>.</li>
 <li>Choose the <strong>main</strong> branch and <code>/ (root)</code> as the folder.</li>
 <li>Click <strong>Save</strong> and this will enable GitHub Pages.</li>
 </ol>
 <p>Within a few minutes, your blog will be ready at <code>https://your-username.github.io/my-eleventy-blog/</code>.</p>
 <hr>
-<h2 id="step-5%3A-create-a-gh-pages-branch-(optional)">Step 5: Create a <code>gh-pages</code> Branch (Optional) <a class="direct-link" href="#step-5%3A-create-a-gh-pages-branch-(optional)"></a></h2>
+<h2 id="step-5%3A-create-a-gh-pages-branch-(optional)">Step 5: Create a <code>gh-pages</code> Branch (Optional) <a class="direct-link" href="#step-5%3A-create-a-gh-pages-branch-(optional)">#</a></h2>
 <p>You may want to create a dedicated <code>gh-pages</code> branch for cleaner deployments. Execute the following command:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">git</span> checkout <span class="token parameter variable">--orphan</span> gh-pages<br><span class="token function">git</span> reset <span class="token parameter variable">--hard</span><br><span class="token function">git</span> commit --allow-empty <span class="token parameter variable">-m</span> <span class="token string">"Initial commit for gh-pages"</span><br><span class="token function">git</span> push origin gh-pages</code></pre>
 <p>Changing in <strong>GitHub Pages settings</strong>, source should point to the gh-pages branch.</p>
 <hr>
-<h2 id="step-6%3A-automate-deployments-with-github-actions">Step 6: Automate Deployments with GitHub Actions <a class="direct-link" href="#step-6%3A-automate-deployments-with-github-actions"></a></h2>
+<h2 id="step-6%3A-automate-deployments-with-github-actions">Step 6: Automate Deployments with GitHub Actions <a class="direct-link" href="#step-6%3A-automate-deployments-with-github-actions">#</a></h2>
 <p>To automatically publish your blog whenever you push changes, a GitHub Actions workflow should be created:</p>
 <ol>
 <li>In your project directory, create <code>.github/workflows/deploy.yml</code>.</li>
@@ -157,56 +151,37 @@ href="/about/">About</a>
 <pre class="language-bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> .github/workflows/deploy.yml<br><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"Add GitHub Actions workflow for deployment"</span><br><span class="token function">git</span> push origin main</code></pre>
 <p>Now, with this setup, any time changes are pushed to the main branch, your blog will automatically deploy.</p>
 <hr>
-<h2 id="step-7%3A-troubleshooting-deployment-issues">Step 7: Troubleshooting Deployment Issues <a class="direct-link" href="#step-7%3A-troubleshooting-deployment-issues"></a></h2>
-<p>If you don’t see your site, try the following:</p>
+<h2 id="step-7%3A-troubleshooting-deployment-issues">Step 7: Troubleshooting Deployment Issues <a class="direct-link" href="#step-7%3A-troubleshooting-deployment-issues">#</a></h2>
+<p>If you don't see your site, try the following:</p>
 <ul>
 <li><strong>Clear the cache</strong> in your browser.</li>
 <li>Make sure <strong>GitHub Pages</strong> is configured in the repository settings.</li>
 <li>In GitHub, verify that the <strong>Actions logs</strong> show that the deployment workflow completed without errors.</li>
 </ul>
 <hr>
-<h2 id="conclusion">Conclusion <a class="direct-link" href="#conclusion"></a></h2>
+<h2 id="conclusion">Conclusion <a class="direct-link" href="#conclusion">#</a></h2>
 <p>Woohoo! Your 11ty blog is now live with GitHub Pages! GitHub Pages is a great place to publish your content because GitHub Pages deploys automatically and hosting is free. Now you can focus on creating great content, and explore the rest of the features in 11ty.</p>
 
-        </div>
-        <hr class="bg-primary">
-        <div class="row p-3">
-
-          
-          <a class="col-6 p-1" href="/posts/20241014_/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
-            </svg>
-            Efficiently Convert Images to WebP Format: My Journey in Developing an Image Converter
-          </a>
-          <a class="col-6 text-end" href="/posts/20241012_/">
-            Creating a Blog with 11ty: A Simple Step-by-Step Guide
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-            </svg>
-          </a>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
 </div>
-
+<hr class="bg-primary">
+<div class="row p-3"><a class="col-6 p-1" href="/posts/20241012_/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+</svg> Creating a Blog with 11ty: A Simple Step-by-Step Guide</a><a class="col-6 p-1 text-end" href="/posts/20241014_/">Efficiently Convert Images to WebP Format: My Journey in Developing an Image Converter <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+</svg></a>
+</div>
+</div>
+</div>
+</div>
 </main>
 <footer class="container bg-white">
 <div class="row text-center">
-    <div class="col-md-12 p-3 col-12 mt-5">
-        <div class="col-md-3 mx-auto">
-            <img src="/img/cinnamonEightNameLogo.webp" class="img-fluid" loading="lazy" height="200" width="200" " alt="Minhee Kim Blog">
-        </div>
-    </div>
-    <div>
-        © 2024. All rights reserved. Powered by cinnamon.eight
-    </div>
+<div class="col-md-12 p-3 col-12 mt-5">
+<div class="col-md-3 mx-auto">
+<img src="/img/cinnamonEightNameLogo.webp" class="img-fluid" loading="lazy" height="200" width="200" " alt="Minhee Kim Blog">
+</div>
+</div>
+
+</div>
 </div>
 </footer>

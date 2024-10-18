@@ -1,12 +1,9 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- SEO Widget Include -->
-    <meta name="google-site-verification" content="rQLUTgfrfsBaGa1eIm0rZ7R8_rSDwntZgqeVmcZy9wE" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="rQLUTgfrfsBaGa1eIm0rZ7R8_rSDwntZgqeVmcZy9wE" />
 <title>Efficiently Convert Images to WebP Format: My Journey in Developing an Image Converter</title>
 <meta name="description" content="A blog about daily life, hobbies, and the pursuit of knowledge. I share stories, tutorials, and reflections on creativity and growth, with a focus on learning and exploring new ideas.">
 <link rel="icon" type="image/x-icon" href="/img/cinnamonEightLogo.webp" />
@@ -22,8 +19,10 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="/img/20241014.webp">
 <meta name="author" content="Minhee Kim"> 
+<meta name="developer" content="Creativitas"> 
+<meta name="developer:url" content="https://www.fiverr.com/creativitas"> 
 <meta name="robots" content="index, follow">
-<link rel="alternate" href="/feed/minhee-feed.xml" type="application/atom+xml" title="Minhee Kim Blog">
+<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Minhee Kim Blog">
 <link rel="alternate" href="/feed/feed.json" type="application/json" title="Minhee Kim Blog">
 <link rel="canonical" href="https://ineeth.com/posts/20241014_/" />
 
@@ -36,38 +35,30 @@
   gtag('config', '52CNXR8KTE');
 </script>
 
+<!-- Font -->
+<link rel="preload" href="/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2" as="font"
+    type="font/woff2" crossorigin="anonymous">
+    <!-- CSS-->
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/text.css">
+<link rel="stylesheet" href="/css/styles.css">
+<!-- RSS Feed Link 추가 -->
+<link rel="alternate" type="application/rss+xml" title="Minhee Kim Blog RSS" href="/rss.xml">
+<meta name="generator" content="Eleventy v2.0.0">
+<!-- JS -->
+<script defer src="/js/copy-code.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-52CNXR8KTE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/text.css">
-
-    <!-- Font -->
-    <link rel="preload" href="/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2" as="font"
-        type="font/woff2" crossorigin="anonymous">
-
-    <!-- Meta Information -->
-    <meta name="generator" content="Eleventy v2.0.0">
-
-    <!-- RSS Feed Link 추가 -->
-    <link rel="alternate" type="application/rss+xml" title="Minhee Kim Blog RSS" href="/rss.xml">
-    <!-- JS -->
-    <script defer src="/js/copy-code.js"></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52CNXR8KTE"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-52CNXR8KTE');
-    </script>
+    gtag('config', 'G-52CNXR8KTE');
+</script>
 </head>
-
 <body class="bg-light">
-</body>
-
-</html>
 <header class="container bg-white">
 <div class="row">
 <div class="col-md-4 col-2">
@@ -79,45 +70,48 @@ title="Minhee Kim Blog" src="/img/cinnamonEightLogo.webp"></a>
 href="/">Home</a>
 <a class="nav-link " 
 href="/about/">About</a>
+<a class="nav-link" 
+href=""></a>
 </nav>
 </div>
 </header>
 <main>
-    <div class="container bg-white">
-  <div class="row">
-    <img class="img-fluid" height="100%" width="100%" alt="Efficiently Convert Images to WebP Format: My Journey in Developing an Image Converter" src="/img/20241014.webp">
-    <div class="col-md-12 p-3">
-      <div class="p-3">
-        <h1><strong><a href="/posts/20241014_/">Efficiently Convert Images to WebP Format: My Journey in Developing an Image Converter</a></strong></h1>
-        <h2 class="text-dark mt-3"></h2>
-        <div class="mt-3 mb-3">
-          <img src="/img/cinnamonEightLogo.webp" width="40" height="40" class="img-thumbnail rounded-circle">
-          by <a href="https://ineeth.com">Minhee Kim</a>
-          <time datetime="2024-10-14">14 Oct 2024</time>
-        </div>
-        <div class="p-1 mb-3"><a href="/tags/image-conversion/" class="badge accent-bg-color me-1">Image Conversion</a><a href="/tags/webp/" class="badge accent-bg-color me-1">WebP</a><a href="/tags/react/" class="badge accent-bg-color me-1">React</a><a href="/tags/web-optimization/" class="badge accent-bg-color me-1">Web Optimization</a><a href="/tags/development-journey/" class="badge accent-bg-color me-1">Development Journey</a>
-        </div>
-        <div class="editable">
-          <h1 id="introduction-to-my-image-converter">Introduction to My Image Converter <a class="direct-link" href="#introduction-to-my-image-converter"></a></h1>
+<div class="container bg-white">
+<div class="row">
+<img class="img-fluid" height="100%" width="100%" alt="Efficiently Convert Images to WebP Format: My Journey in Developing an Image Converter" src="/img/20241014.webp">
+<div class="col-md-12 p-3">
+<div class="p-3">
+<h1><strong><a href="/posts/20241014_/">Efficiently Convert Images to WebP Format: My Journey in Developing an Image Converter</a></strong></h1>
+<h2 class="text-dark mt-3"></h2>
+<div class="mt-3 mb-3">
+<img src="/img/cinnamonEightLogo.webp"
+width="40" height="40" class="img-thumbnail rounded-circle"> 
+by <a href="https://ineeth.com">Minhee Kim</a> 
+<time datetime="2024-10-14">14 Oct 2024</time>
+</div>
+<div class="p-1 mb-3"><a href="/tags/image-conversion/" class="badge bg-point me-1">Image Conversion</a><a href="/tags/webp/" class="badge bg-point me-1">WebP</a><a href="/tags/react/" class="badge bg-point me-1">React</a><a href="/tags/web-optimization/" class="badge bg-point me-1">Web Optimization</a><a href="/tags/development-journey/" class="badge bg-point me-1">Development Journey</a>
+</div>
+<div class="editable">
+<h1 id="introduction-to-my-image-converter">Introduction to My Image Converter <a class="direct-link" href="#introduction-to-my-image-converter">#</a></h1>
 <p>Hello everyone! In this post, I would like to introduce the image converter I developed, share my experiences during the development process, and outline my plans for future improvements.</p>
 <p>This project is based on React and is designed to allow users to easily convert JPEG or PNG files into the WebP format. WebP is an image format that provides excellent compression and quality, making it useful for optimizing websites.</p>
-<h2 id="web-image-converter-project---webp-converter-built-with-react">Web Image Converter Project - WebP Converter Built with React <a class="direct-link" href="#web-image-converter-project---webp-converter-built-with-react"></a></h2>
+<h2 id="web-image-converter-project---webp-converter-built-with-react">Web Image Converter Project - WebP Converter Built with React <a class="direct-link" href="#web-image-converter-project---webp-converter-built-with-react">#</a></h2>
 <p><a href="https://imgtowebp.honeybam.com/">https://imgtowebp.honeybam.com/</a><br>
 Convert your images to WEBP format quickly and easily. Free online tool for image conversion supporting multiple formats.</p>
-<h2 id="project-overview-and-motivation">Project Overview and Motivation <a class="direct-link" href="#project-overview-and-motivation"></a></h2>
+<h2 id="project-overview-and-motivation">Project Overview and Motivation <a class="direct-link" href="#project-overview-and-motivation">#</a></h2>
 <p>The motivation behind developing the image converter was to enable more efficient image management in web environments. Specifically, WebP can reduce file sizes compared to JPEG or PNG, improving page loading speeds and enhancing user experience. This project started as a simple idea, but as I progressed with development, I was able to solve various problems and enhance its features.</p>
-<h2 id="key-features">Key Features <a class="direct-link" href="#key-features"></a></h2>
-<h3 id="multiple-image-selection-and-upload">Multiple Image Selection and Upload <a class="direct-link" href="#multiple-image-selection-and-upload"></a></h3>
+<h2 id="key-features">Key Features <a class="direct-link" href="#key-features">#</a></h2>
+<h3 id="multiple-image-selection-and-upload">Multiple Image Selection and Upload <a class="direct-link" href="#multiple-image-selection-and-upload">#</a></h3>
 <p>Users can upload multiple JPEG or PNG files at once. A list of selected files is displayed on the screen, allowing users to review the files before executing the conversion.</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token punctuation">[</span>files<span class="token punctuation">,</span> setFiles<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token keyword">const</span> <span class="token punctuation">[</span>webpUrls<span class="token punctuation">,</span> setWebpUrls<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="conversion-to-webp">Conversion to WebP <a class="direct-link" href="#conversion-to-webp"></a></h3>
+<h3 id="conversion-to-webp">Conversion to WebP <a class="direct-link" href="#conversion-to-webp">#</a></h3>
 <p>When the user clicks the button for each file, the conversion begins. The <code>canvas.toBlob()</code> method is used to generate high-quality WebP images without loss. Once the conversion is complete, a download button is displayed, enabling users to easily download the converted images.</p>
 <pre class="language-javascript"><code class="language-javascript">canvas<span class="token punctuation">.</span><span class="token function">toBlob</span><span class="token punctuation">(</span><br>  <span class="token punctuation">(</span><span class="token parameter">blob</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>    <span class="token keyword">if</span> <span class="token punctuation">(</span>blob<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      <span class="token keyword">const</span> webpUrl <span class="token operator">=</span> <span class="token constant">URL</span><span class="token punctuation">.</span><span class="token function">createObjectURL</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span><span class="token punctuation">;</span><br>      <span class="token function">setWebpUrls</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">prevUrls</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">[</span><span class="token operator">...</span>prevUrls<span class="token punctuation">,</span> webpUrl<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token string">"image/webp"</span><span class="token punctuation">,</span><br>  <span class="token punctuation">{</span> <span class="token literal-property property">quality</span><span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><br><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h3 id="batch-conversion-and-download">Batch Conversion and Download <a class="direct-link" href="#batch-conversion-and-download"></a></h3>
-<p>If multiple files are selected, users can convert all of them to WebP at once by clicking the “Convert All” button. Once the conversion is complete, users can download all files in bulk using the “Download All” button.</p>
-<h3 id="google-adsense-script-management">Google AdSense Script Management <a class="direct-link" href="#google-adsense-script-management"></a></h3>
+<h3 id="batch-conversion-and-download">Batch Conversion and Download <a class="direct-link" href="#batch-conversion-and-download">#</a></h3>
+<p>If multiple files are selected, users can convert all of them to WebP at once by clicking the &quot;Convert All&quot; button. Once the conversion is complete, users can download all files in bulk using the &quot;Download All&quot; button.</p>
+<h3 id="google-adsense-script-management">Google AdSense Script Management <a class="direct-link" href="#google-adsense-script-management">#</a></h3>
 <p>I efficiently managed the <code>window.adsbygoogle</code> script within the webpage to prevent duplicate ads. This optimization maximizes ad revenue without compromising user experience.</p>
-<h2 id="future-improvement-plans">Future Improvement Plans <a class="direct-link" href="#future-improvement-plans"></a></h2>
+<h2 id="future-improvement-plans">Future Improvement Plans <a class="direct-link" href="#future-improvement-plans">#</a></h2>
 <ol>
 <li>
 <p><strong>Adding a Progress Bar</strong><br>
@@ -132,44 +126,28 @@ I plan to add a feature that allows users to preview the converted images before
 I aim to develop support for multiple languages, including English and Korean, to make the service more accessible to a wider audience. This will help expand the tool into a global service that users from various countries can conveniently use.</p>
 </li>
 </ol>
-<p>During the development process, I encountered several challenges. First, the complexity of state management increased when converting multiple files asynchronously. I solved this by using React’s <code>useState</code> to track the conversion status for each file. Secondly, I faced an issue with the Google AdSense script loading multiple times, which I addressed by carefully controlling the script loading within <code>useEffect</code>.</p>
+<p>During the development process, I encountered several challenges. First, the complexity of state management increased when converting multiple files asynchronously. I solved this by using React's <code>useState</code> to track the conversion status for each file. Secondly, I faced an issue with the Google AdSense script loading multiple times, which I addressed by carefully controlling the script loading within <code>useEffect</code>.</p>
 <p>This project started as a simple image converter, but it has been a valuable experience that made me consider important features for web optimization and user experience improvement. I aim to enhance the tool further by adding the progress bar, preview, and multilingual support.</p>
 <p>I will continue to share my development experiences through this blog, so I appreciate your interest! 😊</p>
 
-        </div>
-        <hr class="bg-primary">
-        <div class="row p-3">
-
-          
-          <div class="col-6"></div> <!-- 빈 공간 -->
-          <a class="col-6 text-end" href="/posts/20241013_/">
-            Deploying Your 11ty Blog on GitHub Pages: A Complete Guide
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-            </svg>
-          </a>
-
-          
-
-        </div>
-
-      </div>
-    </div>
-  </div>
 </div>
-
+<hr class="bg-primary">
+<div class="row p-3"><a class="col-6 p-1" href="/posts/20241013_/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+</svg> Deploying Your 11ty Blog on GitHub Pages: A Complete Guide</a>
+</div>
+</div>
+</div>
+</div>
 </main>
 <footer class="container bg-white">
 <div class="row text-center">
-    <div class="col-md-12 p-3 col-12 mt-5">
-        <div class="col-md-3 mx-auto">
-            <img src="/img/cinnamonEightNameLogo.webp" class="img-fluid" loading="lazy" height="200" width="200" " alt="Minhee Kim Blog">
-        </div>
-    </div>
-    <div>
-        © 2024. All rights reserved. Powered by cinnamon.eight
-    </div>
+<div class="col-md-12 p-3 col-12 mt-5">
+<div class="col-md-3 mx-auto">
+<img src="/img/cinnamonEightNameLogo.webp" class="img-fluid" loading="lazy" height="200" width="200" " alt="Minhee Kim Blog">
+</div>
+</div>
+
+</div>
 </div>
 </footer>
