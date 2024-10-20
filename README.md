@@ -1,6 +1,6 @@
 # Welcome to My Blog
 
-<img src="https://ineeth.com/img/cinnamonEightLogo.webp" alt="Logo" width="100" />
+<img src="https://ineeth.com/img/logo512.webp" alt="Logo" width="100" />
 
 Welcome to my personal blog! Here, I share my thoughts, experiences, and insights on various topics that interest me, including web development, technology, personal growth, and more.
 
