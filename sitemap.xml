@@ -47,26 +47,6 @@
   </url>
   
   <url>
-    <loc>https://ineeth.com/tags/webp/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/eleventy/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/blog-setup/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/frontend-development/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ineeth.com/tags/books/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
@@ -78,6 +58,26 @@
   
   <url>
     <loc>https://ineeth.com/tags/gender-issues/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ineeth.com/tags/webp/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ineeth.com/tags/github-pages/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ineeth.com/tags/static-site-deployment/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ineeth.com/tags/blog-hosting/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
   
@@ -102,38 +102,23 @@
   </url>
   
   <url>
-    <loc>https://ineeth.com/tags/github-pages/</loc>
+    <loc>https://ineeth.com/tags/eleventy/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
   
   <url>
-    <loc>https://ineeth.com/tags/static-site-deployment/</loc>
+    <loc>https://ineeth.com/tags/blog-setup/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
   
   <url>
-    <loc>https://ineeth.com/tags/blog-hosting/</loc>
+    <loc>https://ineeth.com/tags/frontend-development/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
   
   <url>
     <loc>https://ineeth.com/posts/20240930webp/</loc>
     <lastmod>2024-09-30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/drafts/drafts_1/</loc>
-    <lastmod>2024-10-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/drafts/drafts_2/</loc>
-    <lastmod>2024-10-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/drafts/drafts_3/</loc>
-    <lastmod>2024-10-04</lastmod>
   </url>
   
   <url>

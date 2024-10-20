@@ -6,7 +6,7 @@
 <meta name="google-site-verification" content="rQLUTgfrfsBaGa1eIm0rZ7R8_rSDwntZgqeVmcZy9wE" />
 <title>Creating a Blog with 11ty: A Simple Step-by-Step Guide</title>
 <meta name="description" content="An easy guide for beginners to build modern static blogs using 11ty.">
-<link rel="icon" type="image/x-icon" href="/img/cinnamonEightLogo.webp" />
+<link rel="icon" type="image/x-icon" href="/img/logo512.webp" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="https://ineeth.com">
 <meta name="twitter:creator" content="https://ineeth.com">
@@ -62,8 +62,8 @@
 <header class="container bg-white">
 <div class="row">
 <div class="col-md-4 col-2">
-<a href="/"><img width="60" height="60" class="img-fluid logo" 
-title="Minhee Kim Blog" src="/img/cinnamonEightLogo.webp"></a>
+<a href="/"><img loading="lazy" width="50%" class="img-fluid logo" 
+title="Minhee Kim Blog" src="/img/ineethLogo.webp"></a>
 </div>
 <nav class="nav col-md-8 col-10 justify-content-end p-1">
 <a class="nav-link " 
@@ -84,7 +84,7 @@ href=""></a>
 <h1><strong><a href="/posts/20241012_/">Creating a Blog with 11ty: A Simple Step-by-Step Guide</a></strong></h1>
 <h2 class="text-dark mt-3">An easy guide for beginners to build modern static blogs using 11ty.</h2>
 <div class="mt-3 mb-3">
-<img src="/img/cinnamonEightLogo.webp"
+<img src="/img/logo512.webp"
 width="40" height="40" class="img-thumbnail rounded-circle"> 
 by <a href="https://ineeth.com">Minhee Kim</a> 
 <time datetime="2024-10-12">12 Oct 2024</time>
@@ -136,7 +136,7 @@ by <a href="https://ineeth.com">Minhee Kim</a>
 <pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> posts</code></pre>
 <p>Inside that directory, create your first post using Markdown:</p>
 <p><strong>posts/first-post.md</strong>:</p>
-<pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span><br><span class="token front-matter yaml language-yaml">title: "My First Blog Post"<br>date: 2024-10-12<br>tags: ["blog", "first-post"]</span><br><span class="token punctuation">---</span></span><br><br><span class="token title important"><span class="token punctuation">#</span> My First Blog Post  </span><br>Welcome to my first post using 11ty! I'm excited to start this blogging journey.</code></pre>
+<pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span><br><span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token string">"My First Blog Post"</span><br><span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2024-10-12</span><br><span class="token key atrule">tags</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"blog"</span><span class="token punctuation">,</span> <span class="token string">"first-post"</span><span class="token punctuation">]</span></span><br><span class="token punctuation">---</span></span><br><br><span class="token title important"><span class="token punctuation">#</span> My First Blog Post  </span><br>Welcome to my first post using 11ty! I'm excited to start this blogging journey.</code></pre>
 <h2 id="step-5%3A-configure-11ty">Step 5: Configure 11ty <a class="direct-link" href="#step-5%3A-configure-11ty">#</a></h2>
 <p>Create a <code>.eleventy.js</code> configuration file at the root of your project:</p>
 <pre class="language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">return</span> <span class="token punctuation">{</span><br>    <span class="token literal-property property">dir</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token literal-property property">input</span><span class="token operator">:</span> <span class="token string">"posts"</span><span class="token punctuation">,</span><br>      <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token string">"_site"</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
@@ -184,7 +184,7 @@ by <a href="https://ineeth.com">Minhee Kim</a>
 <div class="row text-center">
 <div class="col-md-12 p-3 col-12 mt-5">
 <div class="col-md-3 mx-auto">
-<img src="/img/cinnamonEightNameLogo.webp" class="img-fluid" loading="lazy" height="200" width="200" " alt="Minhee Kim Blog">
+<img src="/img/ineethLogo.webp" class="img-fluid" loading="lazy" height="200" width="200" " alt="Minhee Kim Blog">
 </div>
 </div>
 
