@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="rQLUTgfrfsBaGa1eIm0rZ7R8_rSDwntZgqeVmcZy9wE" />
+<title>10 Smart console Methods to Improve Your JavaScript Debugging</title>
+<meta name="description" content="Explore 10 powerful console methods beyond console.log to make your debugging smarter and more efficient.">
+<link rel="icon" type="image/x-icon" href="/img/logo512.webp" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="https://ineeth.com">
+<meta name="twitter:creator" content="https://ineeth.com">
+<meta name="twitter:title" content="10 Smart console Methods to Improve Your JavaScript Debugging">
+<meta name="twitter:description" content="Explore 10 powerful console methods beyond console.log to make your debugging smarter and more efficient.">
+<meta name="twitter:image" content="/img/20250405.webp">
+<meta property="og:url" content="https://ineeth.com/posts/20250406/">
+<meta property="og:title" content="10 Smart console Methods to Improve Your JavaScript Debugging">
+<meta property="og:description" content="Explore 10 powerful console methods beyond console.log to make your debugging smarter and more efficient.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/img/20250405.webp">
+<meta name="author" content="Minhee Kim"> 
+<meta name="developer" content="Creativitas"> 
+<meta name="developer:url" content="https://www.fiverr.com/creativitas"> 
+<meta name="robots" content="index, follow">
+<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Minhee Kim Blog">
+<link rel="alternate" href="/feed/feed.json" type="application/json" title="Minhee Kim Blog">
+<link rel="canonical" href="https://ineeth.com/posts/20250406/" />
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=52CNXR8KTE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '52CNXR8KTE');
+</script>
+
+<!-- Font -->
+<link rel="preload" href="/fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2" as="font"
+    type="font/woff2" crossorigin="anonymous">
+    <!-- CSS-->
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/text.css">
+<link rel="stylesheet" href="/css/styles.css">
+<!-- RSS Feed Link 추가 -->
+<link rel="alternate" type="application/rss+xml" title="Minhee Kim Blog RSS" href="/rss.xml">
+<meta name="generator" content="Eleventy v2.0.0">
+<!-- JS -->
+<script defer src="/js/copy-code.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-52CNXR8KTE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-52CNXR8KTE');
+</script>
+</head>
+<body class="bg-light">
+<header class="container bg-white">
+    <div class="row align-items-center">
+        <div class="col-md-4 col-3">
+            <a href="/">
+                <img loading="lazy" class="img-fluid logo" title="Minhee Kim Blog" src="/img/ineethLogo.webp">
+            </a>
+        </div>
+        <nav class="nav col-md-8 col-9 justify-content-end p-1">
+            <a class="nav-link "
+                href="/">Home</a>
+            <a class="nav-link "
+                href="/about/">About</a>
+            <a class="nav-link" href=""></a>
+        </nav>
+    </div>
+</header>
+<main>
+<div class="container bg-white">
+<div class="row">
+<img class="img-fluid" height="100%" width="100%" alt="10 Smart console Methods to Improve Your JavaScript Debugging" src="/img/20250405.webp">
+<div class="col-md-12 p-3">
+<div class="p-3">
+<h1><strong><a href="/posts/20250406/">10 Smart console Methods to Improve Your JavaScript Debugging</a></strong></h1>
+<h2 class="text-dark mt-3">Explore 10 powerful console methods beyond console.log to make your debugging smarter and more efficient.</h2>
+<div class="mt-3 mb-3">
+<img src="/img/logo512.webp"
+width="40" height="40" class="img-thumbnail rounded-circle"> 
+by <a href="https://ineeth.com">Minhee Kim</a> 
+<time datetime="2025-04-05">05 Apr 2025</time>
+</div>
+<div class="p-1 mb-3"><a href="/tags/javascript/" class="badge bg-point me-1">JavaScript</a><a href="/tags/debugging/" class="badge bg-point me-1">Debugging</a><a href="/tags/console/" class="badge bg-point me-1">Console</a><a href="/tags/web-development/" class="badge bg-point me-1">Web Development</a>
+</div>
+<nav class="container toc"><ul><li><a href="#1.-console.error()">1. console.error() #</a></li>
+<li><a href="#2.-console.warn()">2. console.warn() #</a></li>
+<li><a href="#3.-console.info()">3. console.info() #</a></li>
+<li><a href="#4.-console.table()">4. console.table() #</a></li>
+<li><a href="#5.-console.dir()">5. console.dir() #</a></li>
+<li><a href="#6.-console.group()-%2F-console.groupend()">6. console.group() / console.groupEnd() #</a></li>
+<li><a href="#7.-console.time()-%2F-console.timeend()">7. console.time() / console.timeEnd() #</a></li>
+<li><a href="#8.-console.assert()">8. console.assert() #</a></li>
+<li><a href="#9.-console.clear()">9. console.clear() #</a></li>
+<li><a href="#10.-console.count()-%2F-console.countreset()">10. console.count() / console.countReset() #</a></li>
+<li><a href="#bonus%3A-console.trace()">Bonus: console.trace() #</a></li>
+<li><a href="#try-it-yourself-%E2%80%93-sample-html">Try It Yourself – Sample HTML #</a></li>
+<li><a href="#why-you-should-clean-up-console-logs-in-production">Why You Should Clean Up console Logs in Production #</a></li>
+<li><a href="#best-practices-to-remove-console-logs-before-deployment">Best Practices to Remove Console Logs Before Deployment #</a><ul><li><a href="#%E2%9C%85-use-babel-plugin">✅ Use Babel Plugin #</a></li>
+<li><a href="#%E2%9C%85-use-eslint">✅ Use ESLint #</a></li>
+<li><a href="#%E2%9C%85-create-a-custom-logger">✅ Create a Custom Logger #</a></li>
+<li><a href="#%E2%9C%85-static-analysis-tools">✅ Static Analysis Tools #</a></li></ul></li>
+<li><a href="#conclusion">Conclusion #</a></li>
+<li><a href="#%F0%9F%94%97-useful-references">🔗 Useful References #</a></li></ul></nav>
+<div class="editable">
+<h1 id="10-smart-console-methods-to-improve-your-javascript-debugging">10 Smart console Methods to Improve Your JavaScript Debugging <a class="direct-link" href="#10-smart-console-methods-to-improve-your-javascript-debugging">#</a></h1>
+<p><strong>Let’s go beyond <code>console.log()</code> and explore more powerful tools for smarter debugging.</strong></p>
+<p>Most developers rely on <code>console.log()</code> during development, and it’s often the first step when checking whether values are correct or code is functioning properly. However, the <code>console</code> object provides many more useful methods that can make debugging more efficient and your code more organized.</p>
+<p>Here are 10 powerful <code>console</code> methods every JavaScript developer should know:</p>
+<hr>
+<h2 id="1.-console.error()">1. <code>console.error()</code> <a class="direct-link" href="#1.-console.error()">#</a></h2>
+<p>Highlights error messages in red. Use it when you want to make critical issues or exceptions stand out.</p>
+<pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">"An error occurred!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h2 id="2.-console.warn()">2. <code>console.warn()</code> <a class="direct-link" href="#2.-console.warn()">#</a></h2>
+<p>Displays warning messages in yellow. Ideal for non-critical issues users should be aware of.</p>
+<pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span><span class="token string">"This is a warning!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h2 id="3.-console.info()">3. <code>console.info()</code> <a class="direct-link" href="#3.-console.info()">#</a></h2>
+<p>Outputs informational messages. Often similar in appearance to <code>console.log()</code>, depending on the browser.</p>
+<pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"This is an informational message."</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h2 id="4.-console.table()">4. <code>console.table()</code> <a class="direct-link" href="#4.-console.table()">#</a></h2>
+<p>Displays arrays or objects in a nice tabular format. Especially helpful for inspecting JSON data.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> users <span class="token operator">=</span> <span class="token punctuation">[</span><br>  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Chulsoo"</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">25</span> <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Younghee"</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">30</span> <span class="token punctuation">}</span><br><span class="token punctuation">]</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>users<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h2 id="5.-console.dir()">5. <code>console.dir()</code> <a class="direct-link" href="#5.-console.dir()">#</a></h2>
+<p>Outputs an interactive list of an object’s properties. Useful for inspecting HTML elements or deep object structures.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> obj <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h2 id="6.-console.group()-%2F-console.groupend()">6. <code>console.group()</code> / <code>console.groupEnd()</code> <a class="direct-link" href="#6.-console.group()-%2F-console.groupend()">#</a></h2>
+<p>Groups related logs together in a collapsible format, making nested logs easier to follow.</p>
+<pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token string">"User Info"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Name: Chulsoo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Age: 25"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">groupEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h2 id="7.-console.time()-%2F-console.timeend()">7. <code>console.time()</code> / <code>console.timeEnd()</code> <a class="direct-link" href="#7.-console.time()-%2F-console.timeend()">#</a></h2>
+<p>Measures how long a block of code takes to run — useful for performance monitoring.</p>
+<pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token string">"Execution Time"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">1000000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br>console<span class="token punctuation">.</span><span class="token function">timeEnd</span><span class="token punctuation">(</span><span class="token string">"Execution Time"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h2 id="8.-console.assert()">8. <code>console.assert()</code> <a class="direct-link" href="#8.-console.assert()">#</a></h2>
+<p>Logs a message <strong>only if the condition is false</strong>.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> value <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">assert</span><span class="token punctuation">(</span>value <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">"Value is not equal to 2!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h2 id="9.-console.clear()">9. <code>console.clear()</code> <a class="direct-link" href="#9.-console.clear()">#</a></h2>
+<p>Clears the console output.</p>
+<pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h2 id="10.-console.count()-%2F-console.countreset()">10. <code>console.count()</code> / <code>console.countReset()</code> <a class="direct-link" href="#10.-console.count()-%2F-console.countreset()">#</a></h2>
+<p>Counts the number of times a specific label has been called.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  console<span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token string">"Greet Count"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Hello, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token function">greet</span><span class="token punctuation">(</span><span class="token string">"Chulsoo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token function">greet</span><span class="token punctuation">(</span><span class="token string">"Younghee"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">countReset</span><span class="token punctuation">(</span><span class="token string">"Greet Count"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token function">greet</span><span class="token punctuation">(</span><span class="token string">"Minsu"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h2 id="bonus%3A-console.trace()">Bonus: <code>console.trace()</code> <a class="direct-link" href="#bonus%3A-console.trace()">#</a></h2>
+<p>Prints a stack trace to show the code path taken to reach the current point.</p>
+<pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">trace</span><span class="token punctuation">(</span><span class="token string">"Trace call"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h2 id="try-it-yourself-%E2%80%93-sample-html">Try It Yourself – Sample HTML <a class="direct-link" href="#try-it-yourself-%E2%80%93-sample-html">#</a></h2>
+<p>Here’s a simple HTML file to test all of the above:</p>
+<pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Console Methods Demo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Open Developer Tools (F12) to See the Console Output<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript"><br>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"✅ General log"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">"❌ An error occurred!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    console<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span><span class="token string">"⚠️ This is a warning!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    console<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"ℹ️ Info log"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    <span class="token keyword">const</span> users <span class="token operator">=</span> <span class="token punctuation">[</span><br>      <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Chulsoo"</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">25</span> <span class="token punctuation">}</span><span class="token punctuation">,</span><br>      <span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">"Younghee"</span><span class="token punctuation">,</span> <span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token number">30</span> <span class="token punctuation">}</span><br>    <span class="token punctuation">]</span><span class="token punctuation">;</span><br>    console<span class="token punctuation">.</span><span class="token function">table</span><span class="token punctuation">(</span>users<span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    <span class="token keyword">const</span> obj <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">;</span><br>    console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    console<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token string">"👤 User Info"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Name: Chulsoo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Age: 25"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    console<span class="token punctuation">.</span><span class="token function">groupEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    console<span class="token punctuation">.</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token string">"⏱ Execution Time"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">1000000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br>    console<span class="token punctuation">.</span><span class="token function">timeEnd</span><span class="token punctuation">(</span><span class="token string">"⏱ Execution Time"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    <span class="token keyword">const</span> value <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br>    console<span class="token punctuation">.</span><span class="token function">assert</span><span class="token punctuation">(</span>value <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">"❗ value is not 2!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    console<span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token string">"Greet Count"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    console<span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token string">"Greet Count"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    console<span class="token punctuation">.</span><span class="token function">countReset</span><span class="token punctuation">(</span><span class="token string">"Greet Count"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    console<span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token string">"Greet Count"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    console<span class="token punctuation">.</span><span class="token function">trace</span><span class="token punctuation">(</span><span class="token string">"📍 Trace point"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    console<span class="token punctuation">.</span><span class="token function">groupCollapsed</span><span class="token punctuation">(</span><span class="token string">"📦 Collapsed group"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"This group is collapsed by default"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    console<span class="token punctuation">.</span><span class="token function">groupEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>      console<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"🧼 Console has been cleared!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<hr>
+<h2 id="why-you-should-clean-up-console-logs-in-production">Why You Should Clean Up <code>console</code> Logs in Production <a class="direct-link" href="#why-you-should-clean-up-console-logs-in-production">#</a></h2>
+<p>Leaving too many console logs in production code can lead to:</p>
+<ol>
+<li><strong>Performance issues</strong> due to excessive rendering in developer tools.</li>
+<li><strong>Security concerns</strong> from leaked data like user info or internal logic.</li>
+<li><strong>Messy code</strong> that’s harder to maintain and review.</li>
+<li><strong>Larger bundle sizes</strong> due to unnecessary logs.</li>
+</ol>
+<hr>
+<h2 id="best-practices-to-remove-console-logs-before-deployment">Best Practices to Remove Console Logs Before Deployment <a class="direct-link" href="#best-practices-to-remove-console-logs-before-deployment">#</a></h2>
+<h3 id="%E2%9C%85-use-babel-plugin">✅ Use Babel Plugin <a class="direct-link" href="#%E2%9C%85-use-babel-plugin">#</a></h3>
+<p>Install a plugin to automatically remove console logs during production builds:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --save-dev babel-plugin-transform-remove-console</code></pre>
+<p>Then configure it in <code>.babelrc</code>:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"env"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"production"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"transform-remove-console"</span><span class="token punctuation">]</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<hr>
+<h3 id="%E2%9C%85-use-eslint">✅ Use ESLint <a class="direct-link" href="#%E2%9C%85-use-eslint">#</a></h3>
+<p>Warn or error when <code>console.log()</code> is used:</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// .eslintrc.js</span><br>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><br>  <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token string-property property">"no-console"</span><span class="token operator">:</span> <span class="token string">"warn"</span> <span class="token comment">// or "error"</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h3 id="%E2%9C%85-create-a-custom-logger">✅ Create a Custom Logger <a class="direct-link" href="#%E2%9C%85-create-a-custom-logger">#</a></h3>
+<p>Use a wrapper to conditionally log messages based on the environment:</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// logger.js</span><br><span class="token keyword">export</span> <span class="token keyword">const</span> logger <span class="token operator">=</span> <span class="token punctuation">{</span><br>  <span class="token function-variable function">log</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>args</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>    <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">!==</span> <span class="token string">"production"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> logger <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./logger'</span><span class="token punctuation">;</span><br>logger<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Debugging message"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<h3 id="%E2%9C%85-static-analysis-tools">✅ Static Analysis Tools <a class="direct-link" href="#%E2%9C%85-static-analysis-tools">#</a></h3>
+<p>Use tools like <code>eslint</code>, <code>sonarqube</code>, <code>husky</code>, <code>prettier</code>, or even grep:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">grep</span> <span class="token parameter variable">-rnw</span> <span class="token string">'./src'</span> <span class="token parameter variable">-e</span> <span class="token string">'console.log'</span></code></pre>
+<hr>
+<h2 id="conclusion">Conclusion <a class="direct-link" href="#conclusion">#</a></h2>
+<p>The <code>console</code> object is more than just <code>log()</code>. Mastering its other methods can help you debug faster, cleaner, and more effectively. Just don’t forget to remove or manage those logs before going live!</p>
+<hr>
+<h2 id="%F0%9F%94%97-useful-references">🔗 Useful References <a class="direct-link" href="#%F0%9F%94%97-useful-references">#</a></h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/console">MDN Web Docs – Console</a></li>
+<li><a href="https://console.spec.whatwg.org">WhatWG Console Spec</a></li>
+</ul>
+
+</div>
+<hr class="bg-primary">
+<div class="row p-3"><a class="col-6 p-1" href="/posts/20241014_/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+</svg> Efficiently Convert Images to WebP Format: My Journey in Developing an Image Converter</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="container bg-white">
+<div class="row text-center">
+<div class="col-md-12 p-3 col-12 mt-5">
+<div class="col-md-3 mx-auto">
+<img src="/img/ineethLogo.webp" class="img-fluid" loading="lazy" height="200" width="200" " alt="Minhee Kim Blog">
+</div>
+</div>
+
+</div>
+</div>
+</footer>

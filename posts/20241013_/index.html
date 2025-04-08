@@ -60,20 +60,20 @@
 </head>
 <body class="bg-light">
 <header class="container bg-white">
-<div class="row">
-<div class="col-md-4 col-2">
-<a href="/"><img loading="lazy" width="50%" class="img-fluid logo" 
-title="Minhee Kim Blog" src="/img/ineethLogo.webp"></a>
-</div>
-<nav class="nav col-md-8 col-10 justify-content-end p-1">
-<a class="nav-link " 
-href="/">Home</a>
-<a class="nav-link " 
-href="/about/">About</a>
-<a class="nav-link" 
-href=""></a>
-</nav>
-</div>
+    <div class="row align-items-center">
+        <div class="col-md-4 col-3">
+            <a href="/">
+                <img loading="lazy" class="img-fluid logo" title="Minhee Kim Blog" src="/img/ineethLogo.webp">
+            </a>
+        </div>
+        <nav class="nav col-md-8 col-9 justify-content-end p-1">
+            <a class="nav-link "
+                href="/">Home</a>
+            <a class="nav-link "
+                href="/about/">About</a>
+            <a class="nav-link" href=""></a>
+        </nav>
+    </div>
 </header>
 <main>
 <div class="container bg-white">
@@ -91,6 +91,15 @@ by <a href="https://ineeth.com">Minhee Kim</a>
 </div>
 <div class="p-1 mb-3"><a href="/tags/11ty/" class="badge bg-point me-1">11ty</a><a href="/tags/github-pages/" class="badge bg-point me-1">GitHub Pages</a><a href="/tags/static-site-deployment/" class="badge bg-point me-1">Static Site Deployment</a><a href="/tags/blog-hosting/" class="badge bg-point me-1">Blog Hosting</a>
 </div>
+<nav class="container toc"><ul><li><a href="#prerequisites">Prerequisites #</a></li>
+<li><a href="#step-1%3A-initialize-a-local-git-repository">Step 1: Initialize a Local Git Repository #</a></li>
+<li><a href="#step-2%3A-create-a-new-github-repository">Step 2: Create a New GitHub Repository #</a></li>
+<li><a href="#step-3%3A-link-your-local-repository-to-github">Step 3: Link Your Local Repository to GitHub #</a></li>
+<li><a href="#step-4%3A-configuring-github-pages">Step 4: Configuring GitHub Pages #</a></li>
+<li><a href="#step-5%3A-create-a-gh-pages-branch-(optional)">Step 5: Create a gh-pages Branch (Optional) #</a></li>
+<li><a href="#step-6%3A-automate-deployments-with-github-actions">Step 6: Automate Deployments with GitHub Actions #</a></li>
+<li><a href="#step-7%3A-troubleshooting-deployment-issues">Step 7: Troubleshooting Deployment Issues #</a></li>
+<li><a href="#conclusion">Conclusion #</a></li></ul></nav>
 <div class="editable">
 <h1 id="deploying-your-11ty-blog-on-github-pages%3A-a-full-guide">Deploying Your 11ty Blog on GitHub Pages: A Full Guide <a class="direct-link" href="#deploying-your-11ty-blog-on-github-pages%3A-a-full-guide">#</a></h1>
 <p><strong>Easily deploy your 11ty blog to GitHub Pages and share your content with the world..</strong></p>

@@ -32,6 +32,21 @@
   </url>
   
   <url>
+    <loc>https://ineeth.com/tags/books/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ineeth.com/tags/feminism/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ineeth.com/tags/gender-issues/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ineeth.com/tags/jekyll/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
@@ -47,17 +62,17 @@
   </url>
   
   <url>
-    <loc>https://ineeth.com/tags/books/</loc>
+    <loc>https://ineeth.com/tags/eleventy/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
   
   <url>
-    <loc>https://ineeth.com/tags/feminism/</loc>
+    <loc>https://ineeth.com/tags/blog-setup/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
   
   <url>
-    <loc>https://ineeth.com/tags/gender-issues/</loc>
+    <loc>https://ineeth.com/tags/frontend-development/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
   
@@ -82,6 +97,26 @@
   </url>
   
   <url>
+    <loc>https://ineeth.com/tags/javascript/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ineeth.com/tags/debugging/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ineeth.com/tags/console/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ineeth.com/tags/web-development/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ineeth.com/tags/image-conversion/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
@@ -98,21 +133,6 @@
   
   <url>
     <loc>https://ineeth.com/tags/development-journey/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/eleventy/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/blog-setup/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ineeth.com/tags/frontend-development/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
   
@@ -144,5 +164,10 @@
   <url>
     <loc>https://ineeth.com/Portfolio/</loc>
     <lastmod>2024-10-18</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ineeth.com/posts/20250406/</loc>
+    <lastmod>2025-04-05</lastmod>
   </url>
 </urlset>

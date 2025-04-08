@@ -60,20 +60,20 @@
 </head>
 <body class="bg-light">
 <header class="container bg-white">
-<div class="row">
-<div class="col-md-4 col-2">
-<a href="/"><img loading="lazy" width="50%" class="img-fluid logo" 
-title="Minhee Kim Blog" src="/img/ineethLogo.webp"></a>
-</div>
-<nav class="nav col-md-8 col-10 justify-content-end p-1">
-<a class="nav-link " 
-href="/">Home</a>
-<a class="nav-link  nav-link active" 
-href="/about/">About</a>
-<a class="nav-link" 
-href=""></a>
-</nav>
-</div>
+    <div class="row align-items-center">
+        <div class="col-md-4 col-3">
+            <a href="/">
+                <img loading="lazy" class="img-fluid logo" title="Minhee Kim Blog" src="/img/ineethLogo.webp">
+            </a>
+        </div>
+        <nav class="nav col-md-8 col-9 justify-content-end p-1">
+            <a class="nav-link "
+                href="/">Home</a>
+            <a class="nav-link  nav-link active"
+                href="/about/">About</a>
+            <a class="nav-link" href=""></a>
+        </nav>
+    </div>
 </header>
 <main>
 <div class="container bg-white">
@@ -82,20 +82,172 @@ href=""></a>
 <h1><strong><a href="/about/">About</a></strong></h1>
 <h2 class="mt-3 mb-3">Personal development journey into frontend and backend technologies.</h2>
 <div class="editable">
-<p>My development journey started completely by chance. One day, a close friend told me, &quot;You're really bad at taking photos.&quot; I was shocked, thinking I was decent! This pushed me to buy a toy camera and start taking photos as a hobby. From there, I developed an interest in photo editing and enrolled in a nearby Photoshop class. That’s where I was first introduced to HTML, back in 2001. I instantly fell in love with it. I bought books on HTML and web development, and spent hours in front of my computer, building websites.</p>
-<p>Back then, web design involved slicing images in Photoshop and loading them onto pages. Although it was slow and sometimes images didn’t load properly, I was proud of the websites I created. As website platforms became more accessible, I drifted away from HTML and my passion for hand-coding.</p>
-<p>I eventually got a job in customer service at a gaming company, but the joy of building things never left me. I missed the satisfaction of working through the night and seeing my own websites come to life. I decided to revisit that dream, and in my mid-30s, I started learning web development again, despite people telling me it was too late to switch careers. The school I attended also said finding a job would be tough, but I felt everything would work out.</p>
-<p>I dove into CSS, JavaScript, and JQuery, and although it was difficult at first, I loved it. I began creating websites for companies I admired and building projects I had always dreamed of. After finishing the course, I was fortunate to land a job maintaining and developing hospital websites, where I also picked up some PHP along the way.</p>
-<p>After a while, a former colleague asked me to help with a new project. I agreed, but the desire to transition into a full-time development career was always on my mind. I decided to study backend development, learning Java, SQL, JSP, and other technologies. But I soon realized that my true passion was still in frontend development—I enjoyed seeing the immediate results of my work.</p>
-<p>I worked on several projects with friends, including travel information sites, couple-matching sites, and gaming sites. I led the frontend development and implemented features like search, user data, and even a YouTube bookmarking system. While backend development was challenging, collaborating with my friends made the entire process rewarding.</p>
-<p>Even though I completed the backend course and took on a few backend roles, my love for frontend development only grew stronger.</p>
-<h3 id="technologies-i-use">Technologies I Use <a class="direct-link" href="#technologies-i-use">#</a></h3>
-<ul>
-<li><strong>HTML/CSS/JavaScript</strong>: Building the structure, style, and interactivity of websites is my foundation.</li>
-<li><strong>Vue2 &amp; Vuetify</strong>: I’ve used these tools in several projects, including a travel information website.</li>
-<li><strong>Java, SQL, JSP</strong>: While I’m more focused on frontend development, I’ve worked with these technologies in various backend roles.</li>
-</ul>
+<hr>
+<div id="content-filter">
+  <button onclick="showAll()">모든 이야기 보기</button>
+  <button onclick="showDevOnly()">개발 이야기만 보기</button>
+</div>
+<div id="story-container">
+  <section class="story">
+    <h2>08/1981</h2>
+    <p>8월 26일, 대한민국에서 태어났다.</p>
+  </section>
+  <section class="story">
+    <h2>12/1985</h2>
+    <p>개집에서 강아지를 끌어안고 잠든 사이, 내가 사라진 줄 알고 온 동네 사람을 동원해 나를 찾던 사건이 있었다.</p>
+  </section>
+  <section class="story">
+    <h2>03/2007</h2>
+    <p>학업에 욕심이 생겨서 수능 시험을 치루고 수원여자대학교 경영정보학과에 입학하다.</p>
+  </section>
+  <section class="story">
+    <h2>06/2008 ~ 12/2008</h2>
+    <p>2009년도에 편입하기 위해 학비를 벌기로 마음 먹고 영화관 CGV 영사실에 입사해서 파트타임 영사기사로 일하다.</p>
+  </section>
+  <section class="story">
+    <h2>03/2009</h2>
+    <p>학업에 욕심이 생겨서 온라인으로 수업을 들을 수 있는 경희사이버대학교의 세무회계학과 3학년으로 편입하다.</p>
+  </section>
+  <section class="story">
+    <h2>12/2009 ~ 07/2010</h2>
+    <p>대학교 졸업 후 평소 게임에 관심이 많고 다른 사람을 돕는 일에 보람을 느끼는 편이라서 게임 총판 회사의 고객 서비스 팀에 입사하다. 관리하는 업체에게 판촉물을 택배로 전송하고 고객에게 서비스를 설명하고 발생한 문제에 대해 접수하여 관련 부서에 전달하는 일을 하다.</p>
+  </section>
+  <section class="story">
+    <h2>09/2010 ~ 07/2013</h2>
+    <p>평소 즐겨하던 게임에 관련된 회사에 입사했다. 블리자드에서 개발한 게임을 PC방에서 유저들이 원활하게 게임을 플레이 할 수 있도록 하는 PC방 고객서비스 팀에서 일했다. 추후 이 회사는 블리자드와 계약을 종료하고 '리그 오브 레전드'를 서비스하는 라이엇 게임즈와 계약하여 대한민국 PC방에서 '리그 오브 레전드'를 플레이 할 수 있도록 런칭하였다. 초반에 서버 문제로 인해 고객의 불만이 매우 많았기 때문에 힘들었지만 오류에 대한 데이터를 관리하기도 하며 해결 방안을 제시하여 문제를 빠르게 해결하며 보람을 느끼는 날도 많았다. PC방을 양도하거나 양수할 경우 게임 관련 데이터를 이전, 관리하는 업무, 1:1문의 답변을 처리하거나 전화 상담을 진행했다. </p>
+  </section>
+  <section class="story">
+    <h2>12/2013 ~ 07/2015</h2>
+    <p>리그 오브 레전드 PC방 런칭을 마치고 얻은 높은 피로감을 해소하기 위해 퇴사 후 휴식기를 가진 다음 게임 아이템을 거래 중개하는 화사에 입사했다. 내가 속한 부서는 중국에서 수입해 온 게임에 대한 1:1문의 답변과 전화 상담을 진행했다. 게임 내 발견되는 버그 혹은 번역 오류 등의 내용을 정리하여 GM부서에 전달하는 업무를 했다. 게임 관련 회사이지만 PC방 사장님이 아닌 고객과 직접 소통하는 회사는 처음이었다. 추후 회사가 어려워져서 부서가 사라졌고 위로금을 적지 않게 받았다. 시간과 돈이 생겨서 그동안 해보고 싶었던 <span class="tooltip-trigger">웹 퍼블리싱</span> 공부를 해보기로 한다.</p>
+  </section>
+  <section class="story dev-story">
+    <h2>06/2022 ~ 06/2024</h2>
+    <p>집 근처에 흥미로운 회사의 공고를 보았다. 기존에 개발된 사이트를 유지보수 하면서 JQuery, JavaScript로 개발된 것을 Vue로 마이그레이션을 할 프론트엔드 개발자를 모집하는 회사였다. 면접 후 빠르게 채용되었고 여러 사람의 손을 거친 프론트 엔드 소스를 고쳐나갔다. 어느 정도 정돈된 후 추가 기능을 고려하여 Vue로 마이그레이션을 진행했다. 책임감을 가지고 시간 관리에 심혈을 기울여 가며 개발했기 때문에 동료들에게 좋은 인상을 주었고 2022년에 <span class="tooltip-trigger">올해의 우수 사원상</span>을 받았다. 그 밖에 Data의 품질 관리를 컨트롤하는 Data Q 사이트의 프론트 엔드를 Vue로 구현했다. </p>
+  </section>
+  <section class="story">
+    <h2>06/2024 ~ </h2>
+    <p>2024년 6월 말에 미국에 도착했다. 나의 새로운 여정을 위한 선택이었다. 2024년 8월에 미국에서 합법적으로 일할 수 있는 워크퍼밋이 승인되었다.</p>
+  </section>
+<!-- 말풍선 모양 창 -->
+<div class="tooltip-modal" id="tooltipModal">
+  <div class="tooltip-content">
+    <h3>친구의 농담</h3>
+    <p>친구가 한 말은 농담이었지만, 그것이 내 여정의 시작이었다.</p>
+    <button class="close-button" id="closeModal">닫기</button>
+  </div>
+</div>
+<style>
+  #content-filter {
+  margin: 3vh 0;
+}
 
+/* 툴팁 트리거 */
+.tooltip-trigger {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* 모달 기본 스타일 (숨김 처리) */
+.tooltip-modal {
+  display: none;
+  position: fixed;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+  width: 220px;
+}
+
+/* 말풍선 꼬리 */
+.tooltip-modal::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  transform: rotate(45deg);
+}
+
+/* 닫기 버튼 스타일 */
+.close-button {
+  display: block;
+  margin-top: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+}
+
+
+</style>
+<script>
+function showAll() {
+    const stories = document.querySelectorAll('.story');
+    stories.forEach(story => (story.style.display = 'block'));  // 모든 이야기 보이기
+  }
+
+  function showDevOnly() {
+    const stories = document.querySelectorAll('.story');
+    const devStories = document.querySelectorAll('.dev-story');
+
+    // 모든 이야기를 숨기고 개발 이야기만 보이게 설정
+    stories.forEach(story => (story.style.display = 'none'));
+    devStories.forEach(devStory => (devStory.style.display = 'block'));
+  }
+ // 모든 .tooltip-trigger 요소를 선택합니다.
+const tooltipTriggers = document.querySelectorAll('.tooltip-trigger');
+const tooltipModal = document.getElementById('tooltipModal');
+const closeModalButton = document.getElementById('closeModal');
+
+// 각 트리거에 이벤트 리스너를 연결합니다.
+tooltipTriggers.forEach(trigger => {
+  trigger.addEventListener('click', (event) => {
+    const triggerRect = event.target.getBoundingClientRect();
+    const tooltipContent = event.target.getAttribute('data-tooltip-content');
+
+    // 툴팁 모달에 내용을 설정합니다.
+    tooltipModal.querySelector('h3').textContent = event.target.textContent;
+    tooltipModal.querySelector('p').textContent = tooltipContent;
+
+    if (window.innerWidth > 768) {
+      let top = triggerRect.bottom + 8;
+      let left = triggerRect.left;
+
+      if (window.innerHeight - triggerRect.bottom < tooltipModal.offsetHeight) {
+        top = triggerRect.top - tooltipModal.offsetHeight - 8;
+      }
+
+      if (window.innerWidth - triggerRect.left < tooltipModal.offsetWidth) {
+        left = triggerRect.right - tooltipModal.offsetWidth;
+      }
+
+      tooltipModal.style.top = `${top}px`;
+      tooltipModal.style.left = `${left}px`;
+    } else {
+      tooltipModal.style.top = `50%`;
+      tooltipModal.style.left = `50%`;
+      tooltipModal.style.transform = `translate(-50%, -50%)`;
+    }
+
+    tooltipModal.style.display = 'block';
+  });
+});
+
+// 닫기 버튼 클릭 시 모달 숨김
+closeModalButton.addEventListener('click', () => {
+  tooltipModal.style.display = 'none';
+});
+
+
+</script>
 </div>
 </div>
 </div>

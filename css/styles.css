@@ -66,3 +66,22 @@ pre:hover .copy-btn {
 .bg-point {
     background-color: #ff5757;
 }
+.logo {
+    max-width: 150px;
+    /* 로고의 최대 너비 */
+    width: 50%;
+    /* 로고가 부모 요소의 50%를 차지 */
+    height: auto;
+    /* 비율 유지를 위해 높이 자동 */
+}
+
+@media (max-width: 576px) {
+
+    /* 작은 화면(모바일) 대응 */
+    .logo {
+        max-width: 100px;
+        /* 모바일에서는 로고 크기를 조절 */
+        width: 70%;
+        /* 부모 요소의 70% 크기로 */
+    }
+}
